@@ -36,7 +36,15 @@ body {
     position: absolute;
     right: 100px;
     bottom: 100px;
-    font-size: 16px; }
+    font-size: 16px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .landing_page_nav button:hover {
+      background: white;
+      color: black;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      cursor: pointer; }
 
 .nav-wrapper {
   position: absolute;
@@ -45,7 +53,7 @@ body {
   color: white; }
   .nav-wrapper svg {
     color: white;
-    margin-left: 20px; }
+    margin: 0px 5px 0px 20px; }
 
 .box-wrapper {
   display: -webkit-box;
@@ -57,14 +65,19 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 75px auto 0; }
   .box-wrapper .section_1_box:nth-child(1) {
-    background-image: url(../images/mensLookBook.jpg); }
+    background-image: url(../images/mensLookBook.jpg);
+    cursor: pointer; }
+  .box-wrapper .section_1_box:nth-child(2) {
+    border: 1px #dcdcdc solid; }
   .box-wrapper .section_1_box:nth-child(3) {
-    background-image: url(../images/womanLookBook.jpg); }
+    background-image: url(../images/womanLookBook.jpg);
+    cursor: pointer; }
   .box-wrapper .section_1_box {
     background-size: cover;
     position: relative;
@@ -77,10 +90,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 5px;
-    border: 1px #5a5a5a solid;
-    -webkit-box-shadow: #000;
-            box-shadow: #000; }
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .box-wrapper .section_1_box button {
       width: 250px;
       height: 50px;
@@ -94,7 +105,15 @@ body {
       margin: 30px auto 0px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .box-wrapper .section_1_box button:hover {
+        background: black;
+        color: white;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        cursor: pointer; }
     .box-wrapper .section_1_box h1 {
       text-align: center;
       margin-bottom: 0px; }
@@ -155,3 +174,71 @@ input {
   display: -ms-flexbox;
   display: flex;
   outline: none; }
+
+.section_2_wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.grey_background {
+  background-color: #f6f6f6;
+  width: 100%; }
+
+.section_2 {
+  margin-top: 100px; }
+  .section_2 h1 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 80px; }
+
+.section_2_logo_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 75px; }
+  .section_2_logo_wrapper .brandLogos {
+    width: auto;
+    height: 20px; }
+
+.section_2_poster_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: 100px auto 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .section_2_poster_wrapper .section_2_left_image img {
+    height: 500px;
+    width: auto; }
+  .section_2_poster_wrapper .section_2_right_images_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 5px; }
+    .section_2_poster_wrapper .section_2_right_images_wrapper img {
+      height: 247.5px;
+      width: auto; }
