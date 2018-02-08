@@ -13,7 +13,6 @@ var
     deporder = require('gulp-deporder'),
     stripdebug = require('gulp-strip-debug'),
     uglify = require('gulp-uglify'),
-  
 
     devBuild = (process.env.NODE_ENV !== 'production'),
     // folders
