@@ -2,4 +2,156 @@
   font-family: 'Open Sans', sans-serif; }
 
 body {
-  background-color: blue; }
+  margin: 0;
+  padding: 0; }
+
+.landing_page_header {
+  background-image: url(../images/HEADER.png);
+  width: 100%;
+  max-width: 2000px;
+  height: 80vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.landing_page_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .landing_page_nav img {
+    position: absolute;
+    top: 25px;
+    left: 100px; }
+  .landing_page_nav button {
+    width: 340px;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    font-size: 16px; }
+
+.nav-wrapper {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  color: white; }
+  .nav-wrapper svg {
+    color: white;
+    margin-left: 20px; }
+
+.box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px; }
+  .box-wrapper .section_1_box:nth-child(1) {
+    background-image: url(../images/mensLookBook.jpg); }
+  .box-wrapper .section_1_box:nth-child(3) {
+    background-image: url(../images/womanLookBook.jpg); }
+  .box-wrapper .section_1_box {
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px;
+    border: 1px #5a5a5a solid;
+    -webkit-box-shadow: #000;
+            box-shadow: #000; }
+    .box-wrapper .section_1_box button {
+      width: 250px;
+      height: 50px;
+      background: transparent;
+      border: 1px solid #000;
+      color: #000;
+      font-size: 16px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 30px auto 0px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .box-wrapper .section_1_box h1 {
+      text-align: center;
+      margin-bottom: 0px; }
+    .box-wrapper .section_1_box h2 {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 0px;
+      font-weight: 100; }
+    .box-wrapper .section_1_box .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 500px;
+      background-color: #33d0de;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 30px auto 0px; }
+      .box-wrapper .section_1_box .circle svg {
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #fff;
+        font-size: 20px; }
+  .box-wrapper .square {
+    width: 70%;
+    height: 33%;
+    border: 2px solid #fff;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .box-wrapper .square h1 {
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto; }
+
+form {
+  margin-bottom: 10px; }
+
+input {
+  border: none;
+  width: 80%;
+  border-bottom: 0.5px solid black;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 20px auto 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none; }
