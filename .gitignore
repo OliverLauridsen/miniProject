@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+*.log
+
+/Users/oliverlauridsen/Documents/GitHub/miniProject/node_modules
