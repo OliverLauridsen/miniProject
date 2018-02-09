@@ -2,7 +2,11 @@
 @import "section_1";
 @import "section_2";
 @import "section_3";
+@import "section_4";
 @import "variables";
+@import "mixins";
+@import "footer";
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
