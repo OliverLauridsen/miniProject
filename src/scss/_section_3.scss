@@ -1,0 +1,65 @@
+@import "variables";
+
+.section_3_image_wrapper {
+    display: flex;
+    flex-direction: row;
+    width:85%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .section_3_images {
+        width:20%;
+        text-align: center;
+        position: relative;
+
+        .section_3_sale_box {
+            position: absolute;
+            top:0;
+            left: 0;
+            width:60px;
+            height:30px;
+            background-color:$mainColor; 
+            color:$white;
+            line-height:30px;
+            text-align: center;
+        }
+
+        p {
+            font-size:$paragraph;
+        }
+        span {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button {
+                width: 50%;
+                height: 30px;
+                background:transparent;
+                font-size: $paragraph;
+                color: $greyText;
+
+
+                &:hover {
+                    background-color:$black;
+                    color:$white;
+                    cursor: pointer;
+                }
+            }
+
+                svg {
+                    margin-right:5px;
+                }
+
+            p {
+                margin: 0;
+                line-height: 30px;
+            }
+        }
+    }
+}

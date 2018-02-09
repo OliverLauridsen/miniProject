@@ -1,0 +1,137 @@
+@import "variables";
+
+.box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:85%;
+    margin: 75px auto 0;
+
+    .section_1_box:nth-child(1) {
+        background-image: url(../images/mensLookBook.jpg);
+        cursor: pointer;
+    }
+    
+    .section_1_box:nth-child(2) {
+        border: 1px #dcdcdc solid;
+    }
+
+    .section_1_box:nth-child(3) {
+        background-image: url(../images/womanLookBook.jpg);
+        cursor: pointer;
+    }
+
+    .section_1_box {
+        background-size: cover;
+        position: relative;
+        width: 32.5%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        min-width: 300px;
+
+        button {
+            width: 85%;
+            height: 50px;
+            background: transparent;
+            border: 1px solid $black;
+            color: $black;
+            font-size: $headerTwo;
+            display: flex;
+            margin: 10px auto 0px;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: $black;
+                color: $white;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom:0px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 0.95em;
+            margin-top:0px;
+            font-weight:100;
+            color: $greyText;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 500px;
+            background-color: $mainColor;
+            display: flex;
+            margin: 30px auto 0px;
+
+            svg {
+                margin: auto;
+                display: flex;
+                color: $white;
+                font-size:1.3em;
+            }
+        }
+    }
+        .square {
+            width: 70%;
+            height: 33%;
+            border: 2px solid $white;
+            margin: auto;
+            align-items: center;
+            display: flex;
+
+            h1 {
+                color: $white;
+                font-size: $headerOne;
+                text-align: center;
+                display: flex;
+                margin: auto;
+            }
+        }
+}
+
+form {
+    margin-bottom: 10px;
+}        
+    input {
+        border: none;
+        width:85%;  
+        border-bottom: 0.5px solid rgb(0, 0, 0);
+        color: $black;
+        font-size: $headerTwo;
+        text-align: center;
+        padding-bottom: 5px;
+        margin: 50px auto 0px;
+        display: flex;
+        outline: none;
+    }
+
+.section_2_wrapper {
+    width:85%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
+    span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 80px;
+        padding-top:40px;
+    }
+
+        .line {
+            height:1px;
+            width:100px;
+            background-color: $black;
+            margin: auto 0;
+        }
+}

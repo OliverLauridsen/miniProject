@@ -1,0 +1,56 @@
+@import "variables";
+
+.landing_page_header {
+    background-image: url(../images/HEADER.png);
+    width: 100%;
+    max-width: 2000px;
+    height:80vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.landing_page_nav {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        position: absolute;
+        top: 25px;
+        left: 100px;
+    }
+
+    button {
+        width: 350px;
+        height: 55px;
+        background: transparent;
+        border: 2px solid $white;
+        color: $white;
+        position: absolute;
+        right: 100px;
+        bottom:65px;
+        font-size: $headerTwo;
+        transition: 0.3s ease-in-out;
+
+
+        &:hover {
+            background: $white;
+            color: $black;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav-wrapper {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    color: $white;
+
+    svg {
+        color: $white;
+        margin: 0px 5px 0px 20px;
+    }
+}
