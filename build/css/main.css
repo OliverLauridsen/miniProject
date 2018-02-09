@@ -28,14 +28,14 @@ body {
     top: 25px;
     left: 100px; }
   .landing_page_nav button {
-    width: 340px;
+    width: 350px;
     height: 55px;
     background: transparent;
     border: 2px solid #fff;
     color: #fff;
     position: absolute;
     right: 100px;
-    bottom: 100px;
+    bottom: 65px;
     font-size: 16px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
@@ -68,7 +68,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 90%;
+  width: 85%;
   margin: 75px auto 0; }
   .box-wrapper .section_1_box:nth-child(1) {
     background-image: url(../images/mensLookBook.jpg);
@@ -81,7 +81,7 @@ body {
   .box-wrapper .section_1_box {
     background-size: cover;
     position: relative;
-    width: 350px;
+    width: 32.5%;
     height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,9 +91,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 300px; }
     .box-wrapper .section_1_box button {
-      width: 250px;
+      width: 85%;
       height: 50px;
       background: transparent;
       border: 1px solid #000;
@@ -102,7 +103,7 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin: 30px auto 0px;
+      margin: 10px auto 0px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -163,20 +164,20 @@ form {
 
 input {
   border: none;
-  width: 80%;
+  width: 85%;
   border-bottom: 0.5px solid black;
   color: #000;
   font-size: 16px;
   text-align: center;
   padding-bottom: 5px;
-  margin: 20px auto 0px;
+  margin: 50px auto 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   outline: none; }
 
 .section_2_wrapper {
-  width: 90%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,17 +186,35 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .section_2_wrapper span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 80px;
+    padding-top: 40px; }
+  .section_2_wrapper .line {
+    height: 1px;
+    width: 100px;
+    background-color: #000;
+    margin: auto 0; }
 
 .grey_background {
   background-color: #f6f6f6;
   width: 100%; }
 
 .section_2 {
-  margin-top: 100px; }
+  margin: 70px 0px; }
   .section_2 h1 {
     text-align: center;
-    padding-top: 20px;
-    margin-bottom: 80px; }
+    font-size: 20px;
+    margin: 0px 10px; }
 
 .section_2_logo_wrapper {
   display: -webkit-box;
@@ -212,7 +231,7 @@ input {
   padding-bottom: 75px; }
   .section_2_logo_wrapper .brandLogos {
     width: auto;
-    height: 20px; }
+    height: 25px; }
 
 .section_2_poster_wrapper {
   display: -webkit-box;
@@ -222,23 +241,89 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
+  width: 85%;
+  height: 70vh;
   margin: 100px auto 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .section_2_poster_wrapper .section_2_left_image img {
-    height: 500px;
-    width: auto; }
-  .section_2_poster_wrapper .section_2_right_images_wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .section_2_poster_wrapper .section_2_left {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/mustHave.png);
+    background-size: cover;
+    background-position: center; }
+  .section_2_poster_wrapper .section_2_right {
+    width: 50%;
+    height: 100%;
     margin-left: 5px; }
-    .section_2_poster_wrapper .section_2_right_images_wrapper img {
-      height: 247.5px;
-      width: auto; }
+    .section_2_poster_wrapper .section_2_right .section_2_images {
+      background-image: url(../images/75off.png);
+      height: 49.5%;
+      background-size: cover;
+      width: 100%;
+      margin-bottom: 5px;
+      background-position: center; }
+    .section_2_poster_wrapper .section_2_right .section_2_images1 {
+      background-image: url(../images/Summer.png);
+      height: 49.5%;
+      background-size: cover;
+      width: 100%;
+      background-position: center; }
+
+.section_3_image_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .section_3_image_wrapper img {
+    height: auto;
+    width: 100%; }
+  .section_3_image_wrapper .section_3_images {
+    width: 20%;
+    text-align: center;
+    position: relative; }
+    .section_3_image_wrapper .section_3_images .section_3_sale_box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 30px;
+      background-color: #33d0de;
+      color: white;
+      line-height: 30px;
+      text-align: center; }
+    .section_3_image_wrapper .section_3_images p {
+      font-size: 14px; }
+    .section_3_image_wrapper .section_3_images span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .section_3_image_wrapper .section_3_images span button {
+        width: 50%;
+        height: 30px;
+        background: transparent; }
+        .section_3_image_wrapper .section_3_images span button:hover {
+          background-color: black;
+          color: white;
+          cursor: pointer; }
+      .section_3_image_wrapper .section_3_images span svg {
+        margin-right: 5px; }
+      .section_3_image_wrapper .section_3_images span p {
+        margin: 0;
+        line-height: 30px; }
