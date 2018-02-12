@@ -94,3 +94,17 @@
             }
         }
     }
+
+    .section_4_social_media_wrapper {
+        width: 50%;
+        justify-content: space-around;
+
+        span {
+            flex-direction: row;
+            display:flex;
+            justify-content: space-around;
+            padding-top:0;
+            margin-bottom: 20px;
+            width: 60%;
+        }
+    }

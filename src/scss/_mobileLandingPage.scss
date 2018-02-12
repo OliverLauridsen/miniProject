@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .landing_page_nav {
 
         img {
@@ -9,7 +9,6 @@
             height:auto;
             left: 10%;
         }
-
     }
 
     .nav-wrapper {
@@ -48,11 +47,12 @@
 }
 
 .box-wrapper {
-    
+    flex-wrap: wrap;
     margin-top: 25px; 
 
     .section_1_box {
         margin-top: 30px;
+        width:100%;
     }
 }
 
@@ -130,4 +130,54 @@
     }
 }
 
+.section_4_person_section {
+    height: auto;
+    padding-bottom:50px;
+
+    .section_4_person_wrapper {
+        width: 80%;
+    }
+} 
+.section_4_social_media_wrapper {
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom:40px;
+    span {
+        flex-direction: row;
+        display:flex;
+        justify-content: space-around;
+        padding-top:0;
+        margin-bottom: 20px;
+        width: auto;
+    }
+}
+
+footer {
+    height: auto;
+    .footer_wrapper {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer_items:nth-child(1) {
+        margin-top: 30px;
+    }
+
+    .footer_items {
+        margin-top:20px;
+
+        span {
+            display:none;
+        }
+    }
+
+}
+
+.section_4_fullwidth_image {
+    height: 200px;
+    background-size: cover;
+    background-image:url(../images/fullWidth_mobile.png);
+}
 }

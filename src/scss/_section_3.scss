@@ -14,7 +14,7 @@
     }
 
     .section_3_images {
-        width:20%;
+        width:45%;
         text-align: center;
         position: relative;
 
@@ -68,16 +68,10 @@
 .section_3_mobile_wrapper {
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         width: auto;
     }
 
 .section_3_mobile_wrapper:nth-child(2) {
     margin-top:0px;
-}
-
-.section_3_image_wrapper {
-    .section_3_images {
-        width: 45%;
-}
 }
