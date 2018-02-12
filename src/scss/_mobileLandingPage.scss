@@ -56,32 +56,36 @@
     }
 }
 
+.section_1_box:nth-child(1) {
+    margin-top:70px;
+} 
+
+.section_2 {
+    margin-bottom: 100px;
+}
+
 .section_2_wrapper {
     text-align: center;
 
     a {
         margin-top: 50px;
     }
+
+    span {
+        padding-top:30px;
+    }
 }
 
 .section_2_logo_wrapper {
     flex-direction: column;
     justify-content: center;
-}
-
-
-.section_4_social_media_wrapper {
-    flex-direction:column;
-}
-
-.section_2_logo_wrapper  {
 
     .brandLogos {
         height:20px;
         width: auto;
     }
-
 }
+
 
 .section_2_poster_wrapper {
     flex-direction: column;
@@ -133,6 +137,7 @@
 .section_4_person_section {
     height: auto;
     padding-bottom:50px;
+    margin-bottom:10px;
 
     .section_4_person_wrapper {
         width: 80%;
@@ -176,8 +181,19 @@ footer {
 }
 
 .section_4_fullwidth_image {
-    height: 200px;
+    height: 150px;
     background-size: cover;
-    background-image:url(../images/fullWidth_mobile.png);
+    background-image:url(../images/fullWidth.png);
+    background-position: center;
+}
+
+.section_1_box:nth-child(2) {
+    display:flex;
+    order: 1;
+}
+
+
+.section_4_social_media_wrapper {
+    flex-direction:column;
 }
 }
