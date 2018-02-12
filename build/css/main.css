@@ -8,6 +8,9 @@
   background-size: cover;
   position: relative; }
 
+#mobile_burger {
+  display: none; }
+
 .landing_page_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +44,7 @@
 
 .nav-wrapper {
   position: absolute;
-  top: 25px;
+  top: 35px;
   right: 100px;
   color: #fff; }
   .nav-wrapper svg {
@@ -265,7 +268,7 @@ input {
       width: 100%;
       background-position: center; }
 
-.section_3_image_wrapper {
+.section_3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,14 +281,14 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .section_3_image_wrapper img {
+  .section_3 img {
     height: auto;
     width: 100%; }
-  .section_3_image_wrapper .section_3_images {
+  .section_3 .section_3_images {
     width: 20%;
     text-align: center;
     position: relative; }
-    .section_3_image_wrapper .section_3_images .section_3_sale_box {
+    .section_3 .section_3_images .section_3_sale_box {
       position: absolute;
       top: 0;
       left: 0;
@@ -295,9 +298,9 @@ input {
       color: #fff;
       line-height: 30px;
       text-align: center; }
-    .section_3_image_wrapper .section_3_images p {
+    .section_3 .section_3_images p {
       font-size: 0.8em; }
-    .section_3_image_wrapper .section_3_images span {
+    .section_3 .section_3_images span {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -308,21 +311,40 @@ input {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .section_3_image_wrapper .section_3_images span button {
+      .section_3 .section_3_images span button {
         width: 50%;
         height: 30px;
         background: transparent;
         font-size: 0.8em;
         color: #818181; }
-        .section_3_image_wrapper .section_3_images span button:hover {
+        .section_3 .section_3_images span button:hover {
           background-color: #000;
           color: #fff;
           cursor: pointer; }
-      .section_3_image_wrapper .section_3_images span svg {
+      .section_3 .section_3_images span svg {
         margin-right: 5px; }
-      .section_3_image_wrapper .section_3_images span p {
+      .section_3 .section_3_images span p {
         margin: 0;
         line-height: 30px; }
+
+.section_3_mobile_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto; }
+
+.section_3_mobile_wrapper:nth-child(2) {
+  margin-top: 0px; }
+
+.section_3_image_wrapper .section_3_images {
+  width: 45%; }
 
 .section_4 span {
   display: -webkit-box;
@@ -401,7 +423,7 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto; }
+  margin: 0 auto 100px; }
   .section_4_social_media_wrapper .section_4_social_media {
     width: 80px;
     height: 80px;
@@ -413,17 +435,23 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid #818181; }
+    border: 1px solid #c5c5c4; }
     .section_4_social_media_wrapper .section_4_social_media svg {
       margin: auto;
       text-align: center;
       font-size: 1.5em;
-      color: #818181; }
+      color: #c5c5c4; }
 
 footer {
   background-color: #333333;
   width: 100%;
-  height: 40vh; }
+  height: 40vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   footer .footer_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -432,15 +460,44 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: auto 10%; }
-  footer .footer_items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    margin: auto 10%;
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .footer_wrapper .footer_items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      footer .footer_wrapper .footer_items h1 {
+        color: #fff;
+        font-size: 1em;
+        margin-bottom: 10px; }
+      footer .footer_wrapper .footer_items h3 {
+        color: #5e5e5e;
+        font-size: 0.8em;
+        margin: 5px 0px; }
+      footer .footer_wrapper .footer_items span {
+        margin: auto; }
+        footer .footer_wrapper .footer_items span h3 {
+          text-align: center; }
+      footer .footer_wrapper .footer_items #creditcard {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        footer .footer_wrapper .footer_items #creditcard svg {
+          margin: auto 5px;
+          text-align: center;
+          font-size: 1.5em;
+          color: #5e5e5e; }
 
 * {
   font-family: 'Open Sans', sans-serif; }
@@ -448,3 +505,99 @@ footer {
 body {
   margin: 0;
   padding: 0; }
+
+@media only screen and (max-width: 768px) {
+  .landing_page_nav img {
+    width: 150px;
+    height: auto;
+    left: 10%; }
+  .nav-wrapper {
+    display: none; }
+  .landing_page_nav button {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 50px;
+    width: 250px;
+    font-size: 0.8em;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    text-align: center; }
+    .landing_page_nav button:hover {
+      background-color: #000;
+      color: #fff; }
+  .landing_page_header {
+    background-image: url(../images/HEADER.1.png);
+    background-position: center; }
+  #mobile_burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 35px;
+    color: #fff; }
+  .box-wrapper {
+    margin-top: 25px; }
+    .box-wrapper .section_1_box {
+      margin-top: 30px; }
+  .section_2_wrapper {
+    text-align: center; }
+    .section_2_wrapper a {
+      margin-top: 50px; }
+  .section_2_logo_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .section_4_social_media_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .section_2_logo_wrapper .brandLogos {
+    height: 20px;
+    width: auto; }
+  .section_2_poster_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section_2_poster_wrapper .section_2_right {
+      width: 100%;
+      margin: 0;
+      height: 50%;
+      margin-top: 5px; }
+    .section_2_poster_wrapper .section_2_left {
+      width: 100%;
+      height: 50%; }
+  .section_3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section_3 .section_3_images {
+      width: 47%;
+      margin: 0; }
+    .section_3 .section_3_images span button {
+      width: 65%; }
+  .section_3_mobile_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .section_3_mobile_wrapper:nth-child(2) {
+    margin-top: 50px; }
+  .section_3_images a {
+    text-decoration: none;
+    color: #000; } }

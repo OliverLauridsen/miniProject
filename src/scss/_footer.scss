@@ -5,15 +5,52 @@ footer {
     background-color:$footerBackground;
     width:100%;
     height:40vh;
+    justify-content: center;
+    display: flex;
 
     .footer_wrapper {
         display: flex;
         flex-direction: row;
         margin: auto 10%;
-    }
-
+        width: 80%;
+        justify-content: space-between;
+    
         .footer_items {
             display: flex;
             flex-direction: column;
+
+            h1 {
+                color:$white;
+                font-size: $headerTwo;
+                margin-bottom:10px;
+            }
+
+            h3 {
+                color:$footerText;
+                font-size:$paragraph;
+                margin: 5px 0px;
+            }
+
+            span {
+                margin: auto;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            #creditcard {
+                display: flex;
+                flex-direction: row;
+
+
+                svg {
+                    margin: auto 5px;
+                    text-align: center;
+                    font-size:$headerOne;
+                    color:$footerText;
+                }
+            }
         }
+    }
 }

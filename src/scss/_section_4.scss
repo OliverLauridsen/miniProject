@@ -74,7 +74,7 @@
         flex-direction: row;
         width: 60%;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 0 auto 100px;
 
         .section_4_social_media {
             width: 80px;
@@ -83,13 +83,13 @@
             background:transparent;
             display: flex;
             justify-content: center;
-            border: 1px solid $greyText;
+            border: 1px solid $socialMediaColor;
 
             svg {
                 margin: auto;
                 text-align: center;
                 font-size:$headerOne;
-                color:$greyText;
+                color:$socialMediaColor;
                 
             }
         }

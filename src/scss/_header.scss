@@ -12,6 +12,10 @@
     position: relative;
 }
 
+#mobile_burger {
+    display:none;
+}
+
 .landing_page_nav {
     display: flex;
     flex-direction: row;
@@ -46,7 +50,7 @@
 
 .nav-wrapper {
     position: absolute;
-    top: 25px;
+    top: 35px;
     right: 100px;
     color: $white;
 
