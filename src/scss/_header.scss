@@ -1,5 +1,7 @@
 @import "variables";
 @import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
 
 .landing_page_header {
     background-image:url(../images/HEADER.png);
@@ -8,7 +10,14 @@
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
+
+    a {
+        text-decoration: none;
+        color:$white;
+    }
 }
+
+
 
 #mobile_burger {
     display:none;
@@ -55,5 +64,14 @@
     svg {
         color: $white;
         margin: 0px 5px 0px 20px;
+
+        }
+
+    span {
+
+        &:hover {
+            font-weight:600;
+    }
+    
     }
 }

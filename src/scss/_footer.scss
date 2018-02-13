@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 footer {
     background-color:$footerBackground;
@@ -7,6 +8,10 @@ footer {
     height:40vh;
     justify-content: center;
     display: flex;
+
+    a {
+        text-decoration: none;
+    }
 
     .footer_wrapper {
         display: flex;
@@ -19,6 +24,10 @@ footer {
             display: flex;
             flex-direction: column;
 
+            h3:hover {
+                color:$white;
+                transition: 0.3s ease-in-out;
+            }
             h1 {
                 color:$white;
                 font-size: $headerTwo;
@@ -29,6 +38,8 @@ footer {
                 color:$footerText;
                 font-size:$paragraph;
                 margin: 5px 0px;
+                transition: 0.3s ease-in-out;
+
             }
 
             span {
@@ -49,6 +60,13 @@ footer {
                     text-align: center;
                     font-size:$headerOne;
                     color:$footerText;
+                    transition: 0.3s ease-in-out;
+
+
+                    &:hover {
+                        transition: 0.3s ease-in-out;
+                        color:$white;
+                    }
                 }
             }
         }

@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 .landing_page_header {
   background-image: url(../images/HEADER.png);
   height: 80vh;
@@ -5,6 +13,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
+  .landing_page_header a {
+    text-decoration: none;
+    color: #fff; }
 
 #mobile_burger {
   display: none; }
@@ -48,6 +59,8 @@
   .nav-wrapper svg {
     color: #fff;
     margin: 0px 5px 0px 20px; }
+  .nav-wrapper span:hover {
+    font-weight: 600; }
 
 .box-wrapper {
   display: -webkit-box;
@@ -283,6 +296,9 @@ input {
     width: 45%;
     text-align: center;
     position: relative; }
+    .section_3 .section_3_images a {
+      text-decoration: none;
+      color: #000; }
     .section_3 .section_3_images .section_3_sale_box {
       position: absolute;
       top: 0;
@@ -292,7 +308,9 @@ input {
       background-color: #33d0de;
       color: #fff;
       line-height: 30px;
-      text-align: center; }
+      text-align: center;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
     .section_3 .section_3_images p {
       font-size: 0.8em; }
     .section_3 .section_3_images span {
@@ -311,11 +329,15 @@ input {
         height: 30px;
         background: transparent;
         font-size: 0.8em;
-        color: #818181; }
+        color: #818181;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
         .section_3 .section_3_images span button:hover {
           background-color: #000;
           color: #fff;
-          cursor: pointer; }
+          cursor: pointer;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
       .section_3 .section_3_images span svg {
         margin-right: 5px; }
       .section_3 .section_3_images span p {
@@ -426,12 +448,25 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid #c5c5c4; }
+    border: 1px solid #c5c5c4;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .section_4_social_media_wrapper .section_4_social_media:hover {
+      color: #000;
+      border: 1px solid #000;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+    .section_4_social_media_wrapper .section_4_social_media:hover svg {
+      color: #000;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
     .section_4_social_media_wrapper .section_4_social_media svg {
       margin: auto;
       text-align: center;
       font-size: 1.5em;
-      color: #c5c5c4; }
+      color: #c5c5c4;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
 
 .section_4_social_media_wrapper {
   width: 50%;
@@ -461,6 +496,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  footer a {
+    text-decoration: none; }
   footer .footer_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -482,6 +519,10 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      footer .footer_wrapper .footer_items h3:hover {
+        color: #fff;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
       footer .footer_wrapper .footer_items h1 {
         color: #fff;
         font-size: 1em;
@@ -489,7 +530,9 @@ footer {
       footer .footer_wrapper .footer_items h3 {
         color: #5e5e5e;
         font-size: 0.8em;
-        margin: 5px 0px; }
+        margin: 5px 0px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
       footer .footer_wrapper .footer_items span {
         margin: auto; }
         footer .footer_wrapper .footer_items span h3 {
@@ -506,7 +549,13 @@ footer {
           margin: auto 5px;
           text-align: center;
           font-size: 1.5em;
-          color: #5e5e5e; }
+          color: #5e5e5e;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+          footer .footer_wrapper .footer_items #creditcard svg:hover {
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+            color: #fff; }
 
 * {
   font-family: 'Open Sans', sans-serif; }

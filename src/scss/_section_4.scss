@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 .section_4 {
 
@@ -84,13 +85,28 @@
             display: flex;
             justify-content: center;
             border: 1px solid $socialMediaColor;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color:$black;
+                border: 1px solid $black;
+                transition: 0.3s ease-in-out;
+
+            }
+
+            &:hover svg{
+                color:$black;
+                transition: 0.3s ease-in-out;
+
+            }
 
             svg {
                 margin: auto;
                 text-align: center;
                 font-size:$headerOne;
                 color:$socialMediaColor;
-                
+                transition: 0.3s ease-in-out;
+
             }
         }
     }

@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 .box-wrapper {
     display: flex;
@@ -11,6 +12,7 @@
     .section_1_box:nth-child(1) {
         background-image: url(../images/mensLookBook.jpg);
         cursor: pointer;
+
     }
     
     .section_1_box:nth-child(2) {
@@ -30,7 +32,7 @@
         display: flex;
         flex-direction: column;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+        
         button {
             width: 85%;
             height: 50px;
