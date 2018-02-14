@@ -3,20 +3,25 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 
+.headerImageMobile {
+    display: none;
+}
 .landing_page_header {
-    background-image:url(../images/HEADER.png);
-    height:80vh;
-    width: auto;
-    background-repeat: no-repeat;
-    background-size:cover;
+    height: auto;
+    width: 100%;
     position: relative;
 
     a {
         text-decoration: none;
         color:$white;
     }
+
 }
 
+.headerImage {
+    height: auto;
+    width:100%;
+}
 
 
 #mobile_burger {
@@ -33,25 +38,24 @@
         left: 100px;
     }
 
-    button {
-        width: 350px;
-        height: 55px;
-        background: transparent;
-        border: 2px solid $white;
-        color: $white;
-        position: absolute;
-        right: 100px;
-        bottom:65px;
-        font-size: $headerTwo;
-        transition: 0.3s ease-in-out;
 
+}
 
-        &:hover {
-            background: $white;
-            color: $black;
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-        }
+.landing_page_nav button {
+    width: 25%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid $white;
+    color: $white;
+    position: absolute;
+    right: 8%;
+    bottom:16%;
+    font-size: $headerTwo;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-color:$black;
+        color:$white;
     }
 }
 

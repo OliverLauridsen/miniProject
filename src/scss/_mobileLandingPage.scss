@@ -2,7 +2,17 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
+
+    .headerImage {
+        display: none;
+    }
+
+    .headerImageMobile {
+        width:100%;
+        height:auto;
+        display: block;
+    }
     .landing_page_nav {
 
         img {
@@ -33,11 +43,6 @@
             color:$white;
         }
     }
-
-.landing_page_header {
-    background-image:url(../images/HEADER.1.png);
-    background-position: center;
-}
 
 #mobile_burger {
     display: flex;

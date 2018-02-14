@@ -6,16 +6,20 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.headerImageMobile {
+  display: none; }
+
 .landing_page_header {
-  background-image: url(../images/HEADER.png);
-  height: 80vh;
-  width: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
+  width: 100%;
   position: relative; }
   .landing_page_header a {
     text-decoration: none;
     color: #fff; }
+
+.headerImage {
+  height: auto;
+  width: 100%; }
 
 #mobile_burger {
   display: none; }
@@ -32,24 +36,22 @@
     position: absolute;
     top: 25px;
     left: 100px; }
-  .landing_page_nav button {
-    width: 350px;
-    height: 55px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    position: absolute;
-    right: 100px;
-    bottom: 65px;
-    font-size: 1em;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
-    .landing_page_nav button:hover {
-      background: #fff;
-      color: #000;
-      -webkit-transition: 0.3s ease-in-out;
-      transition: 0.3s ease-in-out;
-      cursor: pointer; }
+
+.landing_page_nav button {
+  width: 25%;
+  height: 55px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  position: absolute;
+  right: 8%;
+  bottom: 16%;
+  font-size: 1em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .landing_page_nav button:hover {
+    background-color: #000;
+    color: #fff; }
 
 .nav-wrapper {
   position: absolute;
@@ -557,6 +559,177 @@ footer {
             transition: 0.3s ease-in-out;
             color: #fff; }
 
+.landing_page_header_collection {
+  height: auto;
+  width: 100%;
+  position: relative; }
+  .landing_page_header_collection a {
+    text-decoration: none;
+    color: #fff; }
+  .landing_page_header_collection button {
+    width: 250px;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 100px;
+    margin: 0 auto;
+    bottom: 20%;
+    font-size: 1em;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .landing_page_header_collection button:hover {
+      background: #fff;
+      color: #000;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      cursor: pointer; }
+
+.headerImage {
+  height: auto;
+  width: 100%; }
+
+.landing_page_nav_collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .landing_page_nav_collection img {
+    position: absolute;
+    top: 25px;
+    left: 100px; }
+
+.filterable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  position: absolute;
+  top: 50px;
+  left: 1.1%; }
+  .filterable a {
+    text-decoration: none;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .filterable p svg {
+    margin-left: 5px; }
+
+.section_3 {
+  position: relative;
+  padding-top: 140px; }
+
+.section_3:nth-child(n+3) {
+  padding-top: 3%; }
+
+.section_3:nth-child(4) {
+  padding-bottom: 140px; }
+
+.section_3_page_counter {
+  width: 15%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px; }
+
+.page_count_items:nth-child(1) {
+  font-weight: 600;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5); }
+
+.subscribe_section {
+  width: 100%;
+  background-color: #33d0de;
+  height: 22vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .subscribe_section form {
+    margin: auto 0;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px; }
+  .subscribe_section input {
+    border: none;
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    font-size: 0.8em; }
+    .subscribe_section input::-webkit-input-placeholder {
+      color: #fff; }
+    .subscribe_section input:-ms-input-placeholder {
+      color: #fff; }
+    .subscribe_section input::-ms-input-placeholder {
+      color: #fff; }
+    .subscribe_section input::placeholder {
+      color: #fff; }
+  .subscribe_section button {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border: 2px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.8em;
+    margin-left: 25px; }
+
 * {
   font-family: 'Open Sans', sans-serif; }
 
@@ -564,7 +737,13 @@ body {
   margin: 0;
   padding: 0; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
+  .headerImage {
+    display: none; }
+  .headerImageMobile {
+    width: 100%;
+    height: auto;
+    display: block; }
   .landing_page_nav img {
     width: 150px;
     height: auto;
@@ -585,9 +764,6 @@ body {
     .landing_page_nav button:hover {
       background-color: #000;
       color: #fff; }
-  .landing_page_header {
-    background-image: url(../images/HEADER.1.png);
-    background-position: center; }
   #mobile_burger {
     display: -webkit-box;
     display: -ms-flexbox;
