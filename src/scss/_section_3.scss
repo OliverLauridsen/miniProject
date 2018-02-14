@@ -2,9 +2,82 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-.landing {
-    padding:0px !important; 
 
+.section_3 {
+    display:none;
+}
+
+.landing {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:85%;
+    margin: 0 auto;
+
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .section_3_images {
+        width:23%;
+        text-align: center;
+        position: relative;
+
+
+        a {
+            text-decoration: none;
+            color:$black;
+        }
+        .section_3_sale_box {
+            position: absolute;
+            top:0;
+            left: 0;
+            width:60px;
+            height:30px;
+            background-color:$mainColor; 
+            color:$white;
+            line-height:30px;
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        p {
+            font-size:$paragraph;
+        }
+        span {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button {
+                width: 50%;
+                height: 30px;
+                background:transparent;
+                font-size: $paragraph;
+                color: $greyText;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color:$black;
+                    color:$white;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            svg {
+                margin-right:5px;
+            }
+
+            p {
+                margin: 0;
+                line-height: 30px;
+            }
+        }
+    }
 }
 
 p {
@@ -36,7 +109,7 @@ p {
 
 }
 .section_3 {
-    display: flex;
+    display: none;
     flex-direction: row;
     width:85%;
     margin: 0 auto;
@@ -68,7 +141,6 @@ p {
             line-height:30px;
             text-align: center;
             transition: 0.3s ease-in-out;
-
         }
 
         p {
@@ -87,7 +159,6 @@ p {
                 color: $greyText;
                 transition: 0.3s ease-in-out;
 
-
                 &:hover {
                     background-color:$black;
                     color:$white;
@@ -96,9 +167,9 @@ p {
                 }
             }
 
-                svg {
-                    margin-right:5px;
-                }
+            svg {
+                margin-right:5px;
+            }
 
             p {
                 margin: 0;

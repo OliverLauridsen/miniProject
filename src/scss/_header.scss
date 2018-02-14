@@ -41,7 +41,9 @@
 
 }
 
-.landing_page_nav button {
+.landing_page_nav {
+    
+    button {
     width: 25%;
     height: 55px;
     background: transparent;
@@ -54,9 +56,11 @@
     transition: 0.3s ease-in-out;
 
     &:hover {
-        background-color:$black;
-        color:$white;
+        background-color:$white;
+        color:$black;
+        cursor:pointer;
     }
+}
 }
 
 .nav-wrapper {
