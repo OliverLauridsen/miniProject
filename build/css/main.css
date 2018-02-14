@@ -278,6 +278,45 @@ input {
       width: 100%;
       background-position: center; }
 
+.landing {
+  padding: 0px !important; }
+
+p {
+  font-size: 0.8em; }
+
+.section_3_filterables_wrapper {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px; }
+
+.underline {
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background-color: #000;
+  bottom: 5px;
+  left: 7.5%; }
+
+.section_3_desktop_filterable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+
 .section_3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,6 +605,8 @@ footer {
   .landing_page_header_collection a {
     text-decoration: none;
     color: #fff; }
+  .landing_page_header_collection #collectionHeaderImageMobile {
+    display: none; }
   .landing_page_header_collection button {
     width: 250px;
     height: 55px;
@@ -604,6 +645,9 @@ footer {
     position: absolute;
     top: 25px;
     left: 100px; }
+
+.filterableMobile {
+  display: none; }
 
 .filterable {
   display: -webkit-box;
@@ -740,6 +784,8 @@ body {
 @media only screen and (max-width: 768px) {
   .headerImage {
     display: none; }
+  .section_3:nth-child(n+3) {
+    padding-top: 0 !important; }
   .headerImageMobile {
     width: 100%;
     height: auto;
@@ -754,16 +800,17 @@ body {
     right: 0;
     left: 0;
     margin: 0 auto;
-    bottom: 50px;
+    bottom: 5%;
+    height: 50px;
     width: 250px;
     font-size: 0.8em;
-    background-color: #fff;
-    color: #000;
-    border: none;
+    background-color: transparent;
+    color: #fff;
+    border: 2px #fff solid;
     text-align: center; }
     .landing_page_nav button:hover {
-      background-color: #000;
-      color: #fff; }
+      background-color: #fff;
+      color: #000; }
   #mobile_burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -823,6 +870,8 @@ body {
       margin: 0; }
     .section_3 .section_3_images span button {
       width: 65%; }
+  .section_3_filterables_wrapper {
+    display: none; }
   .section_3_mobile_wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -835,7 +884,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .section_3_mobile_wrapper:nth-child(2) {
-    margin-top: 50px; }
+    margin-top: 25px; }
   .section_3_images a {
     text-decoration: none;
     color: #000; }
@@ -899,4 +948,57 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  #collectionHeaderImage {
+    display: none; }
+  .section_3:nth-child(4) {
+    padding-bottom: 100px; }
+  .section_3 {
+    padding-top: 50px; }
+  .section_3_images {
+    margin-bottom: 20px !important; }
+  #section_3_mobile_wrapper_collection {
+    margin-top: 0px !important; }
+  #section_3_mobile_wrapper_collection1 {
+    margin-top: 0px !important; }
+  #collectionHeaderImageMobile {
+    display: block !important;
+    width: 100%;
+    height: auto; }
+  .filterable {
+    display: none; }
+  .landing_page_header_collection #collectionLogo {
+    width: 150px;
+    height: auto;
+    left: 10%; }
+  .landing_page_header_collection button {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 5%;
+    height: 40px;
+    width: 200px;
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #fff;
+    border: 2px #fff solid;
+    text-align: center; }
+    .landing_page_header_collection button:hover {
+      background-color: #fff;
+      color: #000; }
+  .subscribe_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .subscribe_section form {
+    width: 60%;
+    margin: 10px auto; }
+  .subscribe_section button {
+    width: 60%;
+    margin: 10px auto; }
+  .section_3_page_counter {
+    width: 25%; } }

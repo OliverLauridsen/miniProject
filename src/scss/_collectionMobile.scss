@@ -1,4 +1,85 @@
 @media only screen and (max-width: 768px) {
+    #collectionHeaderImage {
+        display:none;
+    }
+
+    .section_3:nth-child(4) {
+        padding-bottom:100px;
+    }
+    .section_3 {
+        padding-top: 50px;
+    }
+
+    
+    .section_3_images {
+        margin-bottom: 20px !important;
+    }
+
+    #section_3_mobile_wrapper_collection {
+        margin-top:0px !important;
+    }
+
+    #section_3_mobile_wrapper_collection1 {
+        margin-top:0px !important;
+    }
+    
+    #collectionHeaderImageMobile {
+        display: block !important;
+        width:100%;
+        height:auto;
+    }
+
+    .filterable {
+        display: none;
+    }
+
     .landing_page_header_collection {
+
+        #collectionLogo {
+            width:150px;
+            height:auto;
+            left: 10%;
+        }
+
+        button {
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            bottom: 5%;
+            height:40px;
+            width:200px;
+            font-size:0.8em;
+            background-color:transparent;
+            color:$white;
+            border: 2px $white solid;
+            text-align: center;
+    
+            &:hover {
+                background-color:$white;
+                color:$black;
+            }
+        }
+
+
+
+    }
+
+    .subscribe_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe_section form{ 
+        width:60%;
+        margin: 10px auto;
+    }
+
+    .subscribe_section button {
+        width:60%;
+        margin: 10px auto;
+    }
+
+    .section_3_page_counter {
+        width:25%;
     }
 }

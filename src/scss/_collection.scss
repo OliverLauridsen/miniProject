@@ -7,6 +7,10 @@
         text-decoration: none;
         color:$white;
     }
+    
+    #collectionHeaderImageMobile {
+        display: none;
+    }
 
 
     button {
@@ -48,7 +52,13 @@
         top: 25px;
         left: 100px;
     }
+    
     }
+
+
+.filterableMobile {
+    display: none;
+}
 
 .filterable {
     display: flex;

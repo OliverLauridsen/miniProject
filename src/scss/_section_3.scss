@@ -2,6 +2,39 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
+.landing {
+    padding:0px !important; 
+
+}
+
+p {
+    font-size:$paragraph;
+}
+
+.section_3_filterables_wrapper {
+    width:85%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+.underline {
+    position: absolute;
+    height:2px;
+    width: 30px;
+    background-color:$black;
+    bottom:5px;
+    left:7.5%;
+}
+.section_3_desktop_filterable {
+    display: flex;
+    width:35%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
 .section_3 {
     display: flex;
     flex-direction: row;
