@@ -52,6 +52,10 @@ select {
             background:transparent;
             border: 2px #333333 solid;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             &:nth-child(odd) {
                 margin-top: 10px;
 
@@ -79,6 +83,14 @@ select {
                     justify-content: center;
                     border:none;
                     background-color:#eeeeee;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color:$black;
+                        color:$white;
+                        transition: 0.3s ease-in-out;
+                        cursor: pointer;
+                    }
                 }
             }
             
@@ -98,6 +110,15 @@ select {
             width:300px;
             border:none;
             margin: 10px 0px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color:$black;
+                color:$white;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+            }
 
             span {
                 
@@ -113,12 +134,32 @@ select {
             width:300px;
             border: none;
             background-color:#eeeeee;
+            transition: 0.3s ease-in-out;
+
+
+            &:hover {
+                background-color:$black;
+                color:$white;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+            }
         }
 
         .psection_1_share {
             height:40px;
             width:175px;
             border:none;
+            transition: 0.3s ease-in-out;
+            
+
+            &:hover {
+                background-color:$black;
+                color:$white;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+            }
+
         }
 
         .psection_1_descriptionWrapper {

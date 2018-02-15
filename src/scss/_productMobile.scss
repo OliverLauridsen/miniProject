@@ -1,0 +1,192 @@
+@media only screen and (max-width: 768px) {
+
+
+    .productHeader {
+        display: none;
+    }
+    .product_header {
+       height:10vh;
+       img {
+        width: 150px;
+        height: auto;
+        left: 10%;
+        top:3%;
+       }
+    }
+    .product_section_1 {
+        margin-top:0;
+        
+        .psection_1_wrapper {
+            margin: 0;
+            width:100%;
+
+            .psection_1_mainContent {
+                width:90%;
+                margin: 50px auto 0px;
+
+                .psection_1_descriptionWrapper {
+                    text-align: center;
+                    margin: 50px auto 30px;
+                }
+
+                .psection_1_share {
+                    margin: 25px 0px 0px 0px;
+                    padding:0;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+            }
+
+            .psection_mobile_column {
+                flex-direction: column;
+
+                .psection_1_sizeGuide {
+
+                    button {
+                        margin:0;
+                    }
+                }
+            }
+            .contentWrapper {
+                flex-direction: column;
+
+                .psection_1_full_image {
+                    height:70vh;
+                    width:100%;
+                    margin: 0;
+                    order:-1;
+                    background-position: top center;
+                }
+
+                .psection_1_previews_wrapper {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width:90%;
+                    margin: 3% auto 0;
+
+                }
+            }
+        }
+    }
+
+    .product_section_2_wrapper {
+        h1 {
+            margin-top:50px;
+            text-align: center;
+        }
+    }
+
+    .product_section_3 {
+        height:auto;
+
+        h1 {
+            text-align: center;
+        }
+    }
+    .psection_3_wrapper  {
+
+        .psection_3_row {
+            display: flex;
+            flex-direction: column;
+            margin-top:50px;
+            height:auto;
+
+            .psection_3_columns {
+                width:100%;
+
+                &:nth-child(1) {
+                    width:100%;
+                    height:50%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                }
+            }
+            .psection_extraordinary_wrapper {
+                width:100%;
+                height:950px;
+
+                button {
+                    width:70%;
+                    margin: 50px auto 0px;
+                }
+
+                .psection_extraordinary {
+
+                    .psection_circle_wrapper{
+                        margin: 0 auto;
+                        text-align: center;
+                        width:100%;
+                        justify-content: space-between;
+
+                        .individual_circle {
+                            font-size: $paragraph;
+
+                            .psection_circle {
+                                height:60px;
+                                width:60px;
+                            }
+
+                            img {
+                                height:30px;
+                                width:auto;
+                            }
+                        }
+                    }
+
+                }
+                
+            }
+        }
+    }   
+    .product_section_31  {
+        height:auto;
+        h1 {
+            text-align: center;
+        }
+
+        .psection_3_wrapper { 
+            height:auto;
+
+            .psection_3_row {
+                flex-direction: column;
+                height:auto;
+
+                .psection_3_columns:nth-child(1) {
+                    width:100%;
+                    height:50%;
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    order:-1;
+                }
+
+                    .psection_extraordinary_wrapper {
+                        width:100%;
+                        height:950px;
+
+                        button {
+                            width:70%;
+                        }
+
+                        .psection_extraordinary {
+
+                            .psection_circle_wrapper {
+                                justify-content: space-between;
+                                width:100%;
+                                margin: 0;
+                            }
+                        }
+                    }
+    
+            }   
+        }
+
+    }
+
+    .discountImage {
+        height:30vh;
+        object-fit: cover;
+    }
+}
