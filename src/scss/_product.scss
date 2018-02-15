@@ -9,6 +9,10 @@ select {
 
 .productHeader {
     width:100%;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .product_header {
@@ -40,6 +44,7 @@ select {
 
     .psection_1_mainContent {
         width:50%;
+
         h1 {
             font-weight:100;
             font-size:$headerOne;
@@ -161,6 +166,7 @@ select {
             }
 
         }
+        
 
         .psection_1_descriptionWrapper {
             margin:50px 0px 20px 0px;
@@ -168,6 +174,11 @@ select {
             flex-direction: row;
             width:60%;
             justify-content: space-between;
+
+            .psection_1_descriptionWrapperElements:nth-child(1) {
+                font-weight:600;
+            }
+
         }
     }
     .contentWrapper {
@@ -183,6 +194,10 @@ select {
             background-position: center;
             margin-left:30px;
             position: relative;
+
+            &:hover {
+                cursor: pointer;
+            }
 
 
             .psection_heart {
