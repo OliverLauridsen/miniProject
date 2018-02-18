@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../build/css/main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+
+<body>
+    <!-- HEADER SECTION STARTS HERE -->
+    <header class="product_header">
+        <nav class="product_nav">
+            <a href="index.html">
+                <img src="../images/logo.png" alt="logo" /> </a>
+
+            <div class="nav-wrapper">
+                <a href="#">
+                    <span>
+                        <i class="fas fa-user"></i> Login
+                    </span>
+                </a>
+                <a href="#">
+                    <span>
+                        <i class="fas fa-shopping-bag"></i> x items </span>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION 1 STARTS HERE -->
+    <div class="contact_form_wrapper">
+        <h1> Contact us now</h1>
+            <form id="app" @submit="checkForm">
+
+                <p>
+                    <label for="name">Name
+                        <label>
+                            <input type="text" name="name" id="name" v-model="name">
+                </p>
+                <p>
+                    <label for="age">Age
+                        <label>
+                            <input type="number" name="age" id="age" v-model="age" min="0">
+                </p>
+                <p>
+                    <label for="mail">Email
+                        <label>
+                                <input type="text" name="mail" id="mail" v-model="mail">
+                            </p>
+                <p>
+                    <button @click="isSubmit = true" id="contactButton" input="submit" type="submit"> Submit </button>
+                </p>
+
+                <p v-if="errors.length">
+                    <b>Please correct the following error(s):</b>
+                    <ul>
+                        <li v-for="error in errors">{{ error }}</li>
+                    </ul>
+                </p>
+
+            </form>
+    </div>
+
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                errors: [],
+                name: null,
+                age: null,
+                mail: null,
+                isSubmit: false
+            },
+            methods: {
+                checkForm: function (e) {
+                    if (this.name && this.age && this.mail) return true;
+                    this.errors = [];
+                    if (!this.name) this.errors.push("Name required.");
+                    if (!this.age) this.errors.push("Age required.");
+                    if (!this.mail) this.errors.push("Valid email is required.");
+                    e.preventDefault();
+                }
+            }
+        })
+    </script>
+
+    <section class="section_4">
+        <span>
+            <div class="line"></div>
+            <h1> GET US ON</h1>
+            <div class="line"></div>
+        </span>
+        <div class="section_4_social_media_wrapper">
+            <span>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-tumblr"></i>
+                    </div>
+                </a>
+            </span>
+        </div>
+    </section>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_items">
+                <a href="#">
+                    <h1> QUESTIONS?</h1>
+                    <h3> Help </h3>
+                    <h3> Track Order </h3>
+                    <h3> Returns </h3>
+                </a>
+            </div>
+            <div class="footer_items">
+                <a href="#">
+                    <h1> WHERE TO BUY</h1>
+                    <h3> Store locator </h3>
+                    <h3> Wishlist </h3>
+                    <h3> Gift Cards </h3>
+                </a>
+            </div>
+            <div class="footer_items">
+                <a href="#">
+                    <h1> ABOUT US</h1>
+                    <h3> Our story </h3>
+                    <h3> Careers </h3>
+                    <h3> Affiliates </h3>
+                </a>
+            </div>
+            <div class="footer_items">
+                <span id="creditcard">
+                    <a href="#">
+                        <i class="fab fa-cc-visa"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-cc-paypal"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-cc-amex"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-cc-visa"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="footer_items">
+                <span>
+                    <img src="../images/logo.png" alt="logo">
+                    <h3> Ecommerce PSD theme </h3>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

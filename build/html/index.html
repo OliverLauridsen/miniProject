@@ -9,12 +9,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../../build/css/main.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
 </head>
 
 <body>
-    <!-- HEADER SECTION STARTS HERE -->
+    <div id="app">
+        <!-- HEADER SECTION STARTS HERE -->
         <header class="landing_page_header">
             <img class="headerImage" src="../images/HEADER.png" />
             <img class="headerImageMobile" src="../images/HEADER.1.png" />
@@ -31,10 +32,10 @@
                     </a>
                     <a href="#">
                         <span>
-                            <i class="fas fa-shopping-bag"></i> x items </span>
+                            <i class="fas fa-shopping-bag"></i> x items
+                        </span>
                         <i class="fas fa-search"></i>
                         <i class="fas fa-bars"></i>
-                    </a>
                     </a>
                 </div>
                 <button> LEARN MORE ABOUT GREAT DEALS </button>
@@ -182,57 +183,57 @@
                 </div>
             </span>
         </section>
-        
+
         <!-- SECTION 3 DESKTOP STARTS HERE  -->
         <section class="landing">
-                    <div class="section_3_images">
-                        <a href="#">
-                            <div class="section_3_sale_box">SALE</div>
-                            <img src="../images/pullandbear1.png">
-                            <p> Pull&Bear Croched Back Playsuit</p>
-                            <span>
-                                <p> $47.10</p>
-                                <button>
-                                    <i class="fas fa-shopping-bag"></i> Add to bag
-                                </button>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="section_3_images">
-                        <a href="#">
-                            <img src="../images/pullandbear2.png">
-                            <p> Pull&Bear Croched Back Playsuit</p>
-                            <span>
-                                <p> $47.10</p>
-                                <button>
-                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="section_3_images">
-                        <a href="#">
-                            <img src="../images/pullandbear3.png">
-                            <p> Pull&Bear Croched Back Playsuit</p>
-                            <span>
-                                <p> $47.10</p>
-                                <button>
-                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="section_3_images">
-                        <a href="#">
-                            <div class="section_3_sale_box">SALE</div>
-                            <img src="../images/pullandbear4.png">
-                            <p> Pull&Bear Croched Back Playsuit</p>
-                            <span>
-                                <p> $47.10</p>
-                                <button>
-                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                            </span>
-                        </a>
-                    </div>
-            </section>
+            <div class="section_3_images">
+                <a href="#">
+                    <div class="section_3_sale_box">SALE</div>
+                    <img src="../images/pullandbear1.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag
+                        </button>
+                    </span>
+                </a>
+            </div>
+            <div class="section_3_images">
+                <a href="#">
+                    <img src="../images/pullandbear2.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                    </span>
+                </a>
+            </div>
+            <div class="section_3_images">
+                <a href="#">
+                    <img src="../images/pullandbear3.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                    </span>
+                </a>
+            </div>
+            <div class="section_3_images">
+                <a href="#">
+                    <div class="section_3_sale_box">SALE</div>
+                    <img src="../images/pullandbear4.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                    </span>
+                </a>
+            </div>
+        </section>
 
         <!-- SECTION 4 STARTS HERE -->
         <section class="section_4">
@@ -352,6 +353,15 @@
                 </div>
             </div>
         </footer>
+    </div>
 </body>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue World!'
+        }
+    })
+</script>
 
 </html>
