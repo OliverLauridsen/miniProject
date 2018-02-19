@@ -2,6 +2,11 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
+
+#vue-routing {
+    margin: 0;
+    padding: 0;
+}
 .burgerContainerMobile {
     display: none;
 }

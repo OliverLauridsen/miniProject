@@ -6,6 +6,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+#vue-routing {
+  margin: 0;
+  padding: 0; }
+
 .burgerContainerMobile {
   display: none; }
 
@@ -1636,6 +1640,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .contact_form_wrapper h1 {
+    text-align: center; }
   #collectionHeaderImage {
     display: none; }
   .landing {

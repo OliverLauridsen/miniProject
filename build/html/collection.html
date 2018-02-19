@@ -10,17 +10,20 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="../index.js"></script>
 
 </head>
 
 <body>
+    <div id="vue-routing">
+
     <div class="main-content wrapper">
         <header class="landing_page_header_collection">
             <img class="headerImage" src="../images/collectionheader.png" id="collectionHeaderImage"/>
             <img class="headerImage" src="../images/collectionheaderMobile.png" id="collectionHeaderImageMobile"/>
 
             <nav class="landing_page_nav_collection">
-                <a href="index.html">
+                <a :href="homeLink">
                     <img src="../images/logo.png" alt="logo" id="collectionLogo"/> </a>
                 
                 <div class="nav-wrapper">
@@ -38,19 +41,19 @@
                             <label for="burger-check" class="burger"></label>
                             <nav id="navigation1" class="navigation">
                                 <ul>
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="product.html">Product</a>
-                                    </li>
-                                    <li>
-                                        <a href="collection.html">Collection</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
+                                        <li>
+                                                <a :href="homeLink">Home</a>
+                                            </li>
+                                            <li>
+                                                <a :href="productLink">Product</a>
+                                            </li>
+                                            <li>
+                                                <a :href="collectionLink">Collection</a>
+                                            </li>
+                                            <li>
+                                                <a :href="contactLink">Contact</a>
+                                            </li>
+                                            </ul>
                             </nav>
                         </span>
 
@@ -510,6 +513,78 @@
             </div>
         </footer>
 
+        
+    </div>
+
+    <script>
+            Vue.component('carousel-component', {
+                render: function (createElement) {
+                    return createElement('div', { class: 'carousel-component' },
+                        this.items.map((item, index) =>
+                            createElement('div', {
+                                'class': 'carousel-page' + (this.current === index ? ' active' : ''),
+                                style: {
+                                    transform: `translate3d(${this.position(index) * 100}%, 0, 0)`,
+                                }
+                            }, [item])
+                        ).concat([
+                            createElement('button', {
+                                'class': 'carousel-nav-prev',
+                                on: { click: () => { this.decreaseCurrent(); } }
+                            }, 'Prev'),
+                            createElement('button', {
+                                'class': 'carousel-nav-next',
+                                on: { click: () => { this.increaseCurrent(); } }
+                            }, 'Next')
+                        ])
+                    );
+                },
+                data: function () {
+                    return {
+                        current: 0
+                    };
+                },
+                computed: {
+                    items: function () {
+                        return this.$slots.default.filter(function (item) {
+                            return item.componentOptions !== undefined &&
+                                item.componentOptions.tag === 'carousel-item';
+                        });
+                    }
+                },
+                methods: {
+                    decreaseCurrent: function () {
+                        this.current += this.items.length - 1;
+                        this.current %= this.items.length;
+                    },
+                    increaseCurrent: function () {
+                        this.current += 1;
+                        this.current %= this.items.length;
+                    },
+                    position: function (index) {
+                        if (index === this.current) return 0;
+                        if (index === (this.current + 1) % this.items.length) return 1;
+                        return -1;
+                    }
+                }
+            });
+
+            Vue.component('carousel-item', {
+                render: function (createElement) {
+                    return createElement('div', { class: 'carousel-item' }, this.$slots.default);
+                }
+            });
+
+            new Vue({
+                el: '#vue-routing',
+                data: {
+                    homeLink: 'index.html',
+                    productLink: 'product.html',
+                    collectionLink: 'collection.html',
+                    contactLink: 'contact.html'
+                }
+            });
+        </script>
     </div>
 </body>
 
