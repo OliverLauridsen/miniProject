@@ -29,7 +29,23 @@
     }
 
     .nav-wrapper {
-        display:none;
+        right:10%;
+        width:auto;
+        span {
+            display: none;
+        }
+        svg {
+            display: none;
+        }
+    }
+
+    .burgerContainer {
+        display: block !important;
+
+        .navigation {
+            height: auto;
+            width:200px;
+        }
     }
 
     .landing_page_nav button {

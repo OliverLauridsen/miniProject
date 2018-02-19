@@ -2,7 +2,9 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-
+.burgerContainerMobile {
+    display: none;
+}
 .headerImageMobile {
     display: none;
 }
@@ -73,14 +75,6 @@
     svg {
         color: $white;
         margin: 0px 5px 0px 20px;
-
         }
 
-    span {
-
-        &:hover {
-            font-weight:600;
-    }
-    
-    }
 }
