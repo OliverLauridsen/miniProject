@@ -59,6 +59,9 @@ Vue.component('carousel-item', {
 new Vue({
     el: '#vue-routing',
     data: {
-        homeLink: 'index.html'
-    }
+        homeLink: 'index.html',
+        productLink: 'product.html',
+        collectionLink: 'collection.html',
+        contactLink: 'contact.html'
+}
 });
