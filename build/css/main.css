@@ -615,7 +615,7 @@ footer {
     width: 150px; }
   footer a {
     text-decoration: none; }
-  footer .footer_wrapper {
+  footer .footer__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -628,7 +628,7 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    footer .footer_wrapper .footer_items {
+    footer .footer__inner .footer__items {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -636,25 +636,27 @@ footer {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      footer .footer_wrapper .footer_items h3:hover {
+      footer .footer__inner .footer__items a {
+        text-decoration: none; }
+      footer .footer__inner .footer__items h3:hover {
         color: #fff;
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
-      footer .footer_wrapper .footer_items h1 {
+      footer .footer__inner .footer__items h1 {
         color: #fff;
         font-size: 1em;
         margin-bottom: 10px; }
-      footer .footer_wrapper .footer_items h3 {
+      footer .footer__inner .footer__items h3 {
         color: #5e5e5e;
         font-size: 0.8em;
         margin: 5px 0px;
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
-      footer .footer_wrapper .footer_items span {
+      footer .footer__inner .footer__items span {
         margin: auto; }
-        footer .footer_wrapper .footer_items span h3 {
+        footer .footer__inner .footer__items span h3 {
           text-align: center; }
-      footer .footer_wrapper .footer_items #creditcard {
+      footer .footer__inner .footer__items #footer__creditcard {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -662,14 +664,14 @@ footer {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row; }
-        footer .footer_wrapper .footer_items #creditcard svg {
+        footer .footer__inner .footer__items #footer__creditcard svg {
           margin: auto 5px;
           text-align: center;
           font-size: 1.5em;
           color: #5e5e5e;
           -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out; }
-          footer .footer_wrapper .footer_items #creditcard svg:hover {
+          footer .footer__inner .footer__items #footer__creditcard svg:hover {
             -webkit-transition: 0.3s ease-in-out;
             transition: 0.3s ease-in-out;
             color: #fff; }
