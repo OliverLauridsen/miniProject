@@ -15,6 +15,7 @@
 
 <body>
     <div id="vue-routing">
+
         <!-- HEADER SECTION STARTS HERE -->
         <header class="product_header">
             <nav class="product_nav">
@@ -115,23 +116,18 @@
                                 <i class="fas fa-share-alt"></i> Share this product
                             </button>
                         </span>
-                        <div class="psection_1_descriptionWrapper">
-                            <div class="psection_1_descriptionWrapperElements">
-                                <button v-on:click="description = !description">
-                                    Description
-                                </button>
-                            </div>
-                            <div class="psection_1_descriptionWrapperElements">
-                                <button v-on:click="brand = !brand">
-                                    Brand
-                                </button>
-                            </div>
-                            <div class="psection_1_descriptionWrapperElements">
-                                <button v-on:click="info = !info">
-                                    Information
-                                </button>
-                            </div>
-                        </div>
+                        <tabs>
+                            <tab name="Services" :selected="true">
+                                <h1>What we do</h1>
+                            </tab>
+                            <tab name="Pricing">
+                                <h1>How much we do it for</h1>
+                            </tab>
+                            <tab name="About Us">
+                                <h1>Why we do it</h1>
+                            </tab>
+                        </tabs>
+                            
                         
                         <div class="psection_1_descriptionTextWrapper">
                             <p v-if="description" class="psection_1_descriptionText">
@@ -142,10 +138,10 @@
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             </p>
                             <p v-if="brand" class="psection_1_descriptionText">
-                                <strong>The brand of the dress</strong>
+                                The brand of the dress
                             </p>
                             <p v-if="info" class="psection_1_descriptionText">
-                                <strong>Information about the dress</strong>
+                                The brand of the dress
                             </p>
                         </div>
                     </div>
@@ -163,6 +159,9 @@
 
                 }
             });
+        </script>
+
+        <script>
         </script>
 
         <!-- SECTION 2 STARTS HERE -->

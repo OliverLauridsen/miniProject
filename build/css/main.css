@@ -6,6 +6,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+#description:hover {
+  cursor: pointer; }
+
 #vue-routing {
   margin: 0;
   padding: 0; }
@@ -878,6 +881,9 @@ button {
 select {
   font-size: 0.8em; }
 
+.psection_1_descriptionTextWrapper {
+  height: 175px; }
+
 .productHeader {
   width: 100%; }
   .productHeader:hover {
@@ -1018,8 +1024,12 @@ select {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .psection_1_wrapper .psection_1_mainContent .psection_1_descriptionWrapper .psection_1_descriptionWrapperElements:nth-child(1) {
-        font-weight: 600; }
+      .psection_1_wrapper .psection_1_mainContent .psection_1_descriptionWrapper button {
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        font-size: 0.8em;
+        text-align: left; }
   .psection_1_wrapper .contentWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1761,6 +1771,8 @@ body {
         transition: 0.3s ease-in-out; }
   .section_3_page_counter {
     width: 25%; }
+  .psection_1_descriptionTextWrapper {
+    height: auto; }
   .productHeader {
     display: none; }
   .product_header {

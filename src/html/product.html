@@ -10,13 +10,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="../index.js"></script>
 
 </head>
 
 <body>
     <div id="vue-routing">
-
         <!-- HEADER SECTION STARTS HERE -->
         <header class="product_header">
             <nav class="product_nav">
@@ -57,6 +55,8 @@
                 </div>
             </nav>
         </header>
+        </div>
+
         <img class="productHeader" src="../images/productHeader.png" alt="Product Header Image">
 
         <!-- SECTION 1 STARTS HERE -->
@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    <div class="psection_1_mainContent">
+                    <div class="psection_1_mainContent" id="app11">
                         <h1>Adelia Dress</h1>
                         <span>
                             <p id="price">$79.85</p>
@@ -116,23 +116,54 @@
                             </button>
                         </span>
                         <div class="psection_1_descriptionWrapper">
-                            <div class="psection_1_descriptionWrapperElements">Description</div>
-                            <div class="psection_1_descriptionWrapperElements">Brand</div>
-                            <div class="psection_1_descriptionWrapperElements">Info</div>
+                            <div class="psection_1_descriptionWrapperElements">
+                                <button v-on:click="description = !description">
+                                    Description
+                                </button>
+                            </div>
+                            <div class="psection_1_descriptionWrapperElements">
+                                <button v-on:click="brand = !brand">
+                                    Brand
+                                </button>
+                            </div>
+                            <div class="psection_1_descriptionWrapperElements">
+                                <button v-on:click="info = !info">
+                                    Information
+                                </button>
+                            </div>
                         </div>
+                        
                         <div class="psection_1_descriptionTextWrapper">
-                            <p class="psection_1_descriptionText">
+                            <p v-if="description" class="psection_1_descriptionText">
                                 Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             </p>
+                            <p v-if="brand" class="psection_1_descriptionText">
+                                <strong>The brand of the dress</strong>
+                            </p>
+                            <p v-if="info" class="psection_1_descriptionText">
+                                <strong>Information about the dress</strong>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+            const app11 = new Vue({
+                el: '#app11',
+                data: {
+                    description: true,
+                    brand: false,
+                    info: false
+
+                }
+            });
+        </script>
 
         <!-- SECTION 2 STARTS HERE -->
         <section class="product_section_2">
@@ -404,7 +435,6 @@
                 }
             });
         </script>
-    </div>
 </body>
 
 </html>
