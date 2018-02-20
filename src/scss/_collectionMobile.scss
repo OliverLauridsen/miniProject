@@ -1,5 +1,13 @@
 @media only screen and (max-width: 768px) {
     
+    .main-content {
+        .landing {
+            margin-top:0px;
+        }
+    }
+    .filterable_relative {
+        display: none;
+    }
     .contact_form_wrapper {
         h1 {
             text-align: center;
@@ -7,6 +15,14 @@
     }
     #collectionHeaderImage {
         display:none;
+    }
+
+    .section_3_first {
+        padding-top:0;
+    }
+
+    .section_3_rest {
+        margin-top:0;
     }
 
     .landing {
@@ -41,6 +57,7 @@
         flex-direction: row;
         justify-content: space-between;
         width:50%;
+        margin-top:50px;
     }
 
     .filterableMobileWrapper {

@@ -10,6 +10,101 @@
 </head>
 
 <body>
+
+     <!-- SECTION 3 MOBILE STARTS HERE  -->
+     <div class="section_3_filterables_wrapper">
+        <div class="section_3_desktop_filterable">
+            <p class="desktop_filterable_elements">NEW ARRIVALS</p>
+            <p class="desktop_filterable_elements">TOP SELLERS</p>
+            <p class="desktop_filterable_elements">FEATURED</p>
+            <div class="underline"></div>
+        </div>
+    </div>
+
+    <section class="section_3">
+        <span class="section_3_mobile_wrapper">
+            <div class="section_3_images">
+                <a href="#">
+                    <div class="section_3_sale_box">SALE</div>
+                    <img src="../images/pullandbear1.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag
+                        </button>
+                    </span>
+                </a>
+            </div>
+            <div class="section_3_images">
+                <a href="#">
+                    <img src="../images/pullandbear2.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                    </span>
+                </a>
+            </div>
+        </span>
+        <span class="section_3_mobile_wrapper">
+            <div class="section_3_images">
+                <a href="#">
+                    <img src="../images/pullandbear3.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                    </span>
+                </a>
+            </div>
+            <div class="section_3_images">
+                <a href="#">
+                    <div class="section_3_sale_box">SALE</div>
+                    <img src="../images/pullandbear4.png">
+                    <p> Pull&Bear Croched Back Playsuit</p>
+                    <span>
+                        <p> $47.10</p>
+                        <button>
+                            <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                    </span>
+                </a>
+            </div>
+        </span>
+    </section>
+
+  <div id="app2">
+      <section class="section_3">
+          <span v-for="product in products" class="section_3_mobile_wrapper">
+            <div class="section_3_images">
+                <div class="section_3_sale_box">SALE</div>
+                <img :src="'../images/' + product.image_url" :alt="product.title" />
+                <p> {{ product.title }}</p>
+                <span>
+                    <p>  {{ product.price }} </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i> Add to bag
+                    </button>
+                </span>
+            </div>
+            <div class="section_3_images">
+                <div class="section_3_sale_box">SALE</div>
+                <img :src="'../images/' + product.image_url" :alt="product.title" />
+                <p> {{ product.title }}</p>
+                <span>
+                    <p>  {{ product.price }} </p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i> Add to bag
+                    </button>
+                </span>
+            </div>
+            
+          </span>
+        </section>
+  </div>
+
   <div id="app">
     <section class="landing">
       <div v-for="product in products" class="section_3_images">
@@ -44,3 +139,19 @@
     }
   })
 </script>
+
+<script>
+    const app2 = new Vue({
+      el: '#app2',
+      data: {
+        products: []
+      },
+      created() {
+        fetch('https://api.myjson.com/bins/h62ix')
+          .then(response => response.json())
+          .then(json => {
+            this.products = json.products
+          })
+      }
+    })
+  </script>
