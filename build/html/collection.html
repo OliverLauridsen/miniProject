@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../../build/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="build/css/main.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -16,13 +16,12 @@
 <body>
     <div class="main-content wrapper">
         <header class="landing_page_header_collection">
-            <img class="headerImage" src="../images/collectionheader.png" id="collectionHeaderImage" />
-            <img class="headerImage" src="../images/collectionheaderMobile.png" id="collectionHeaderImageMobile" />
-
+            <img class="headerImage" src="build/images/collectionHeader.png" id="collectionHeaderImage" />
+            <img class="headerImage" src="build/images/collectionHeaderMobile.png" id="collectionHeaderImageMobile" />
             <div id="vue-routing">
                 <nav class="landing_page_nav_collection">
                     <a :href="homeLink">
-                        <img src="../images/logo.png" alt="logo" id="collectionLogo" /> </a>
+                        <img src="build/images/logo.png" alt="logo" id="collectionLogo" /> </a>
                     <div class="nav-wrapper">
                         <a href="#">
                             <span>
@@ -97,7 +96,7 @@
                 <section class="landing" id="product-loop">
                     <div v-for="product in products" class="section_3_images">
                         <a href="#">
-                            <img :src="'../images/' + product.image_url" :alt="product.title" />
+                            <img :src="'build/images/' + product.image_url" :alt="product.title" />
                             <p> {{ product.title }} </p>
                             <span>
                                 <p> {{ product.price }}</p>
@@ -112,7 +111,7 @@
             <section class="landing" id="product-loop1">
                 <div v-for="product in products" class="section_3_images">
                     <a href="#">
-                        <img :src="'../images/' + product.image_url" :alt="product.title" />
+                        <img :src="'build/images/' + product.image_url" :alt="product.title" />
                         <p> {{ product.title }} </p>
                         <span>
                             <p> {{ product.price }}</p>
@@ -127,7 +126,7 @@
             <section class="landing" id="product-loop2">
                 <div v-for="product in products" class="section_3_images">
                     <a href="#">
-                        <img :src="'../images/' + product.image_url" :alt="product.title" />
+                        <img :src="'build/images/' + product.image_url" :alt="product.title" />
                         <p> {{ product.title }} </p>
                         <span>
                             <p> {{ product.price }}</p>
@@ -255,7 +254,7 @@
                 </div>
                 <div class="footer__items">
                     <span>
-                        <img src="../images/logo.png" alt="logo">
+                        <img src="build/images/logo.png" alt="logo">
                         <h3> Ecommerce PSD theme </h3>
                     </span>
                 </div>

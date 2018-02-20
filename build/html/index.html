@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../../build/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="build/css/main.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://çfonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
@@ -19,25 +19,25 @@
         <div id="app">
             <carousel-component>
                 <carousel-item>
-                    <img src="../images/HEADER.png" alt="Slide image 1">
+                    <img src="build/images/HEADER.png" alt="Slide image 1">
                 </carousel-item>
                 <carousel-item>
-                    <img src="../images/HEADER.png" alt="Slide image 2">
+                    <img src="build/images/HEADER.png" alt="Slide image 2">
                 </carousel-item>
                 <carousel-item>
-                    <img src="../images/HEADER.png" alt="Slide image 3">
+                    <img src="build/images/HEADER.png" alt="Slide image 3">
                 </carousel-item>
                 <carousel-item>
-                    <img src="../images/HEADER.png" alt="Slide image 4">
+                    <img src="build/images/HEADER.png" alt="Slide image 4">
                 </carousel-item>
             </carousel-component>
         </div>
 
-        <img class="headerImageMobile" src="../images/HEADER.1.png" />
+        <img class="headerImageMobile" src="build/images/HEADER.1.png" />
 
         <nav class="landing_page_nav" id="vue-instance-nav">
             <a :href="homeLink">
-                <img src="../images/logo.png" alt="logo" /> </a>
+                <img src="build/images/logo.png" alt="logo" /> </a>
 
             <div class="nav-wrapper">
                 <a href="#">
@@ -124,19 +124,19 @@
                 </span>
                 <div class="section_2_logo_wrapper">
                     <a href="#">
-                        <img src="../images/PullBear.png" alt="Pull & Bear" class="brandLogos">
+                        <img src="build/images/PullBear.png" alt="Pull & Bear" class="brandLogos">
                     </a>
                     <a href="#">
-                        <img src="../images/MichaelKors.png" alt="Michael Kors" class="brandLogos">
+                        <img src="build/images/MichaelKors.png" alt="Michael Kors" class="brandLogos">
                     </a>
                     <a href="#">
-                        <img src="../images/mango.png" alt="Mango" class="brandLogos">
+                        <img src="build/images/mango.png" alt="Mango" class="brandLogos">
                     </a>
                     <a href="#">
-                        <img src="../images/MissGuided.png" alt="Missguided" class="brandLogos">
+                        <img src="build/images/MissGuided.png" alt="Missguided" class="brandLogos">
                     </a>
                     <a href="#">
-                        <img src="../images/Monki.png" alt="Monki" class="brandLogos">
+                        <img src="build/images/Monki.png" alt="Monki" class="brandLogos">
                     </a>
                 </div>
             </div>
@@ -169,7 +169,7 @@
     <section class="landing" id="product-loop">
         <div v-for="product in products" class="section_3_images">
             <a href="#">
-                <img :src="'../images/' + product.image_url" :alt="product.title" />
+                <img :src="'build/images/' + product.image_url" :alt="product.title" />
                 <p> {{ product.title }} </p>
                 <span>
                     <p> {{ product.price }}</p>
@@ -293,7 +293,7 @@
             </div>
             <div class="footer__items">
                 <span>
-                    <img src="../images/logo.png" alt="logo">
+                    <img src="build/images/logo.png" alt="logo">
                     <h3> Ecommerce PSD theme </h3>
                 </span>
             </div>
