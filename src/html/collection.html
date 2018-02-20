@@ -17,242 +17,253 @@
 <body>
     <div id="vue-routing">
 
-    <div class="main-content wrapper">
-        <header class="landing_page_header_collection">
-            <img class="headerImage" src="../images/collectionheader.png" id="collectionHeaderImage"/>
-            <img class="headerImage" src="../images/collectionheaderMobile.png" id="collectionHeaderImageMobile"/>
+        <div class="main-content wrapper">
+            <header class="landing_page_header_collection">
+                <img class="headerImage" src="../images/collectionheader.png" id="collectionHeaderImage" />
+                <img class="headerImage" src="../images/collectionheaderMobile.png" id="collectionHeaderImageMobile" />
 
-            <nav class="landing_page_nav_collection">
-                <a :href="homeLink">
-                    <img src="../images/logo.png" alt="logo" id="collectionLogo"/> </a>
-                
-                <div class="nav-wrapper">
-                    <a href="#">
-                        <span>
-                            <i class="fas fa-user"></i> Login
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span>
-                        <i class="fas fa-shopping-bag"></i> x items </span>
-                    </a>
-                    <span class="burgerContainer">
+                <nav class="landing_page_nav_collection">
+                    <a :href="homeLink">
+                        <img src="../images/logo.png" alt="logo" id="collectionLogo" /> </a>
+
+                    <div class="nav-wrapper">
+                        <a href="#">
+                            <span>
+                                <i class="fas fa-user"></i> Login
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <i class="fas fa-shopping-bag"></i> x items </span>
+                        </a>
+                        <span class="burgerContainer">
                             <input class="burger-check" id="burger-check" type="checkbox">
                             <label for="burger-check" class="burger"></label>
                             <nav id="navigation1" class="navigation">
                                 <ul>
-                                        <li>
-                                                <a :href="homeLink">Home</a>
-                                            </li>
-                                            <li>
-                                                <a :href="productLink">Product</a>
-                                            </li>
-                                            <li>
-                                                <a :href="collectionLink">Collection</a>
-                                            </li>
-                                            <li>
-                                                <a :href="contactLink">Contact</a>
-                                            </li>
-                                            </ul>
+                                    <li>
+                                        <a :href="homeLink">Home</a>
+                                    </li>
+                                    <li>
+                                        <a :href="productLink">Product</a>
+                                    </li>
+                                    <li>
+                                        <a :href="collectionLink">Collection</a>
+                                    </li>
+                                    <li>
+                                        <a :href="contactLink">Contact</a>
+                                    </li>
+                                </ul>
                             </nav>
                         </span>
 
-                </div>
-            </nav>
-            <button> BROWSE COLLECTION </button>
-        </header>
-
-        <!-- SECTION 3 MOBILE STARTS HERE  -->
-
-        <section class="section_3">
-            <a href="#">
-                <div class="filterableMobileWrapper">
-                    <div class="filterableMobile">
-                        <p class="filterableMobileElements">
-                            SORT BY <i class="fas fa-caret-down"></i>
-                        </p>
-                        <p class="filterableMobileElements">
-                            FILTER
-                        </p>
                     </div>
-                </div>
-            </a>
-            <span class="section_3_mobile_wrapper">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear1.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag
-                            </button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear2.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-            <span class="section_3_mobile_wrapper">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear3.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear4.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-        </section>
+                </nav>
+                <button> BROWSE COLLECTION </button>
+            </header>
 
-        <section class="section_3">
-            <span class="section_3_mobile_wrapper">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear1.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag
-                            </button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear2.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-            <span class="section_3_mobile_wrapper mobile_wrapper_collection">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear3.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear4.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-        </section>
+            <!-- SECTION 3 MOBILE STARTS HERE  -->
 
-        <section class="section_3">
-            <span class="section_3_mobile_wrapper">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear1.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag
-                            </button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear2.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-            <span class="section_3_mobile_wrapper mobile_wrapper_collection">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear3.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear4.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-            <div class="section_3_page_counter">
-                <p class="page_count_items">1</p>
-                <p class="page_count_items">2</p>
-                <p class="page_count_items">3</p>
-                <p class="page_count_items">4</p>
-                <p class="page_count_items">5</p>
-            </div>
-        </section>
-
-
-        <!-- SECTION 3 DESKTOP STARTS HERE  -->
-
-        <section class="landing section_3_first">
-                <div class="filterable">
+            <section class="section_3">
+                <a href="#">
+                    <div class="filterableMobileWrapper">
+                        <div class="filterableMobile">
+                            <p class="filterableMobileElements">
+                                SORT BY
+                                <i class="fas fa-caret-down"></i>
+                            </p>
+                            <p class="filterableMobileElements">
+                                FILTER
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <span class="section_3_mobile_wrapper">
+                    <div class="section_3_images">
                         <a href="#">
-                            <p class="filterable_options">New collection (1-12 of 58) </p>
-                            <p class="filterable_options">SORT BY <i class="fas fa-caret-down"></i></p>
-                            <p class="filterable_options">FEATURES <i class="fas fa-caret-down"></i></p>
-                            <p class="filterable_options">SIZE <i class="fas fa-caret-down"></i></p>
-                            <p class="filterable_options">COLOUR <i class="fas fa-caret-down"></i></p>
-                            <p class="filterable_options">PRICE <i class="fas fa-caret-down"></i></p>
+                            <img src="../images/pullandbear1.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag
+                                </button>
+                            </span>
                         </a>
                     </div>
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear2.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+                <span class="section_3_mobile_wrapper">
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear3.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear4.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+            </section>
+
+            <section class="section_3">
+                <span class="section_3_mobile_wrapper">
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear1.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag
+                                </button>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear2.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+                <span class="section_3_mobile_wrapper mobile_wrapper_collection">
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear3.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear4.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+            </section>
+
+            <section class="section_3">
+                <span class="section_3_mobile_wrapper">
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear1.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag
+                                </button>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear2.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+                <span class="section_3_mobile_wrapper mobile_wrapper_collection">
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear3.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="section_3_images">
+                        <a href="#">
+                            <img src="../images/pullandbear4.png">
+                            <p> Pull&Bear Croched Back Playsuit</p>
+                            <span>
+                                <p> $47.10</p>
+                                <button>
+                                    <i class="fas fa-shopping-bag"></i> Add to bag</button>
+                            </span>
+                        </a>
+                    </div>
+                </span>
+                <div class="section_3_page_counter">
+                    <p class="page_count_items">1</p>
+                    <p class="page_count_items">2</p>
+                    <p class="page_count_items">3</p>
+                    <p class="page_count_items">4</p>
+                    <p class="page_count_items">5</p>
+                </div>
+            </section>
+
+
+            <!-- SECTION 3 DESKTOP STARTS HERE  -->
+
+            <section class="landing section_3_first">
+                <div class="filterable">
+                    <a href="#">
+                        <p class="filterable_options">New collection (1-12 of 58) </p>
+                        <p class="filterable_options">SORT BY
+                            <i class="fas fa-caret-down"></i>
+                        </p>
+                        <p class="filterable_options">FEATURES
+                            <i class="fas fa-caret-down"></i>
+                        </p>
+                        <p class="filterable_options">SIZE
+                            <i class="fas fa-caret-down"></i>
+                        </p>
+                        <p class="filterable_options">COLOUR
+                            <i class="fas fa-caret-down"></i>
+                        </p>
+                        <p class="filterable_options">PRICE
+                            <i class="fas fa-caret-down"></i>
+                        </p>
+                    </a>
+                </div>
                 <div class="section_3_images">
                     <a href="#">
                         <img src="../images/pullandbear1.png">
@@ -298,9 +309,9 @@
                         </span>
                     </a>
                 </div>
-        </section>
-    
-        <section class="landing section_3_rest">
+            </section>
+
+            <section class="landing section_3_rest">
                 <div class="section_3_images">
                     <a href="#">
                         <img src="../images/pullandbear1.png">
@@ -346,9 +357,9 @@
                         </span>
                     </a>
                 </div>
-        </section>
-    
-        <section class="landing section_3_rest">
+            </section>
+
+            <section class="landing section_3_rest">
                 <div class="section_3_images">
                     <a href="#">
                         <img src="../images/pullandbear1.png">
@@ -404,59 +415,59 @@
             </section>
 
 
-        <section class="subscribe_section">
-            <form action="#">
-                <input type="text" name="email" placeholder="YOUR EMAIL">
-            </form>
-            <button>
-                SUBSCRIBE TO OUR NEWSLETTER
-            </button>
-        </section>
+            <section class="subscribe_section">
+                <form action="#">
+                    <input type="text" name="email" placeholder="YOUR EMAIL">
+                </form>
+                <button>
+                    SUBSCRIBE TO OUR NEWSLETTER
+                </button>
+            </section>
 
-        <section class="section_4">
-            <span>
-                <div class="line"></div>
-                <h1> GET US ON</h1>
-                <div class="line"></div>
-            </span>
-            <div class="section_4_social_media_wrapper">
+            <section class="section_4">
                 <span>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-pinterest"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                    </a>
+                    <div class="line"></div>
+                    <h1> GET US ON</h1>
+                    <div class="line"></div>
                 </span>
-                <span>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-tumblr"></i>
-                        </div>
-                    </a>
-                </span>
-            </div>
-        </section>
-        <footer class="footer">
+                <div class="section_4_social_media_wrapper">
+                    <span>
+                        <a href="#">
+                            <div class="section_4_social_media">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="section_4_social_media">
+                                <i class="fab fa-pinterest"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="section_4_social_media">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <div class="section_4_social_media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="section_4_social_media">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="section_4_social_media">
+                                <i class="fab fa-tumblr"></i>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </section>
+            <footer class="footer">
                 <div class="footer__inner">
                     <div class="footer__items">
                         <a href="#">
@@ -512,7 +523,7 @@
                     </div>
                 </div>
             </footer>
-    </div>
+        </div>
 
 
 
@@ -520,7 +531,7 @@
 
 
 
-    <script>
+        <script>
             Vue.component('carousel-component', {
                 render: function (createElement) {
                     return createElement('div', { class: 'carousel-component' },

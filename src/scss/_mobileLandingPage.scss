@@ -196,18 +196,18 @@
 
 footer {
     height: auto;
-    .footer_wrapper {
+    .footer__inner {
         flex-direction: column;
         flex-wrap: wrap-reverse;
         justify-content: center;
         text-align: center;
     }
 
-    .footer_items:nth-child(1) {
+    .footer__items:nth-child(1) {
         margin-top: 30px;
     }
 
-    .footer_items {
+    .footer__items {
         margin-top:20px;
 
         span {

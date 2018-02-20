@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../build/css/main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <section class="landing">
+      <div v-for="product in products" class="section_3_images">
+        <a href="#">
+          <div class="section_3_sale_box">SALE</div>
+          <img :src="'../images/' + product.image_url" :alt="product.title" />
+          <p> {{ product.title }} </p>
+          <span>
+            <p> {{ product.price }}</p>
+            <button>
+              <i class="fas fa-shopping-bag"></i> Add to bag
+            </button>
+          </span>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      products: []
+    },
+    created() {
+      fetch('https://api.myjson.com/bins/h62ix')
+        .then(response => response.json())
+        .then(json => {
+          this.products = json.products
+        })
+    }
+  })
+</script>

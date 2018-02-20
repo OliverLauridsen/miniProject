@@ -1608,7 +1608,7 @@ body {
       width: auto; }
   footer {
     height: auto; }
-    footer .footer_wrapper {
+    footer .footer__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1619,11 +1619,11 @@ body {
           -ms-flex-pack: center;
               justify-content: center;
       text-align: center; }
-    footer .footer_items:nth-child(1) {
+    footer .footer__items:nth-child(1) {
       margin-top: 30px; }
-    footer .footer_items {
+    footer .footer__items {
       margin-top: 20px; }
-      footer .footer_items span {
+      footer .footer__items span {
         display: none; }
   .section_4_fullwidth_image {
     height: 150px;

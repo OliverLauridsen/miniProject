@@ -55,13 +55,3 @@ Vue.component('carousel-item', {
         return createElement('div', { class: 'carousel-item' }, this.$slots.default);
     }
 });
-
-new Vue({
-    el: '#vue-routing',
-    data: {
-        homeLink: 'index.html',
-        productLink: 'product.html',
-        collectionLink: 'collection.html',
-        contactLink: 'contact.html'
-}
-});

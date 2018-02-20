@@ -15,214 +15,158 @@
 </head>
 
 <body>
-    <div id="vue-routing">
+    <!-- HEADER SECTION STARTS HERE -->
+    <header class="landing_page_header">
+        <div id="app">
+            <carousel-component>
+                <carousel-item>
+                    <img src="../images/HEADER.png" alt="Slide image 1">
+                </carousel-item>
+                <carousel-item>
+                    <img src="../images/HEADER.png" alt="Slide image 1">
+                </carousel-item>
+                <carousel-item>
+                    <img src="../images/HEADER.png" alt="Slide image 1">
+                </carousel-item>
+                <carousel-item>
+                    <img src="../images/HEADER.png" alt="Slide image 1">
+                </carousel-item>
+            </carousel-component>
+        </div>
 
-        <!-- HEADER SECTION STARTS HERE -->
-        <header class="landing_page_header">
-            <div id="app">
-                <carousel-component>
-                    <carousel-item>
-                        <img src="../images/HEADER.png" alt="Slide image 1">
-                    </carousel-item>
-                    <carousel-item>
-                        <img src="../images/HEADER.png" alt="Slide image 1">
-                    </carousel-item>
-                    <carousel-item>
-                        <img src="../images/HEADER.png" alt="Slide image 1">
-                    </carousel-item>
-                    <carousel-item>
-                        <img src="../images/HEADER.png" alt="Slide image 1">
-                    </carousel-item>
-                </carousel-component>
-            </div>
+        <img class="headerImageMobile" src="../images/HEADER.1.png" />
 
-            <img class="headerImageMobile" src="../images/HEADER.1.png" />
+        <nav class="landing_page_nav" id="vue-instance-nav">
+            <a :href="homeLink">
+                <img src="../images/logo.png" alt="logo" /> </a>
 
-            <nav class="landing_page_nav">
-                <a :href="homeLink">
-                    <img src="../images/logo.png" alt="logo" /> </a>
-
-                <div class="nav-wrapper">
-                    <a href="#">
-                        <span>
-                            <i class="fas fa-user"></i> Login
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span>
-                            <i class="fas fa-shopping-bag"></i> x items
-                        </span>
-                        <i class="fas fa-search"></i>
-                    </a>
-                    <span class="burgerContainer">
-                        <input class="burger-check" id="burger-check" type="checkbox">
-                        <label for="burger-check" class="burger"></label>
-                        <nav id="navigation1" class="navigation">
-                            <ul>
-                                <li>
-                                    <a :href="homeLink">Home</a>
-                                </li>
-                                <li>
-                                    <a :href="productLink">Product</a>
-                                </li>
-                                <li>
-                                    <a :href="collectionLink">Collection</a>
-                                </li>
-                                <li>
-                                    <a :href="contactLink">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </span>
-                </div>
-                <button> LEARN MORE ABOUT GREAT DEALS </button>
-            </nav>
-        </header>
-        </span>
-
-        <!-- SECTION 1 STARTS HERE -->
-        <section class="section_1">
-            <div class="box-wrapper">
-                <div class="section_1_box">
-                    <div class="square">
-                        <h1>
-                            MEN'S
-                            <br>lookbook
-                        </h1>
-                    </div>
-                </div>
-                <div class="section_1_box">
-                    <div class="circle">
-                        <i class="far fa-envelope"></i>
-                    </div>
-                    <h1> GET OUR NEWSLETTER</h1>
-                    <h2> JOIN OUR MAILLIST TO RECIEVE SPECIAL DISCOUNTS</h2>
-
-                    <form action="#">
-                        <input type="text" name="email" placeholder="ENTER YOUR EMAIL">
-                    </form>
-                    <button>
-                        SUBSCRIBE
-                    </button>
-                </div>
-                <div class="section_1_box">
-                    <div class="square">
-                        <h1>
-                            WOMEN'S
-                            <br> lookbook
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 2 STARTS HERE -->
-        <section class="section_2">
-            <div class="grey_background">
-                <div class="section_2_wrapper">
+            <div class="nav-wrapper">
+                <a href="#">
                     <span>
-                        <div class="line"></div>
-                        <h1> TOP BRANDS</h1>
-                        <div class="line"></div>
+                        <i class="fas fa-user"></i> Login
                     </span>
-                    <div class="section_2_logo_wrapper">
-                        <a href="#">
-                            <img src="../images/PullBear.png" alt="Pull & Bear" class="brandLogos">
-                        </a>
-                        <a href="#">
-                            <img src="../images/MichaelKors.png" alt="Michael Kors" class="brandLogos">
-                        </a>
-                        <a href="#">
-                            <img src="../images/mango.png" alt="Mango" class="brandLogos">
-                        </a>
-                        <a href="#">
-                            <img src="../images/MissGuided.png" alt="Missguided" class="brandLogos">
-                        </a>
-                        <a href="#">
-                            <img src="../images/Monki.png" alt="Monki" class="brandLogos">
-                        </a>
-                    </div>
+                </a>
+                <a href="#">
+                    <span>
+                        <i class="fas fa-shopping-bag"></i> x items
+                    </span>
+                    <i class="fas fa-search"></i>
+                </a>
+                <span class="burgerContainer">
+                    <input class="burger-check" id="burger-check" type="checkbox">
+                    <label for="burger-check" class="burger"></label>
+                    <nav id="navigation1" class="navigation">
+                        <ul>
+                            <li>
+                                <a :href="homeLink">Home</a>
+                            </li>
+                            <li>
+                                <a :href="productLink">Product</a>
+                            </li>
+                            <li>
+                                <a :href="collectionLink">Collection</a>
+                            </li>
+                            <li>
+                                <a :href="contactLink">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </span>
+            </div>
+            <button> LEARN MORE ABOUT GREAT DEALS </button>
+        </nav>
+    </header>
+    </span>
+
+    <!-- SECTION 1 STARTS HERE -->
+    <section class="section_1">
+        <div class="box-wrapper">
+            <div class="section_1_box">
+                <div class="square">
+                    <h1>
+                        MEN'S
+                        <br>lookbook
+                    </h1>
                 </div>
             </div>
-
-            <a href="#">
-                <div class="section_2_poster_wrapper">
-                    <div class="section_2_left"></div>
-                    <div class="section_2_right">
-                        <div class="section_2_images"></div>
-                        <div class="section_2_images1"></div>
-                    </div>
-
+            <div class="section_1_box">
+                <div class="circle">
+                    <i class="far fa-envelope"></i>
                 </div>
-            </a>
-        </section>
+                <h1> GET OUR NEWSLETTER</h1>
+                <h2> JOIN OUR MAILLIST TO RECIEVE SPECIAL DISCOUNTS</h2>
 
-        <!-- SECTION 3 MOBILE STARTS HERE  -->
-        <div class="section_3_filterables_wrapper">
-            <div class="section_3_desktop_filterable">
-                <p class="desktop_filterable_elements">NEW ARRIVALS</p>
-                <p class="desktop_filterable_elements">TOP SELLERS</p>
-                <p class="desktop_filterable_elements">FEATURED</p>
-                <div class="underline"></div>
+                <form action="#">
+                    <input type="text" name="email" placeholder="ENTER YOUR EMAIL">
+                </form>
+                <button>
+                    SUBSCRIBE
+                </button>
+            </div>
+            <div class="section_1_box">
+                <div class="square">
+                    <h1>
+                        WOMEN'S
+                        <br> lookbook
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 STARTS HERE -->
+    <section class="section_2">
+        <div class="grey_background">
+            <div class="section_2_wrapper">
+                <span>
+                    <div class="line"></div>
+                    <h1> TOP BRANDS</h1>
+                    <div class="line"></div>
+                </span>
+                <div class="section_2_logo_wrapper">
+                    <a href="#">
+                        <img src="../images/PullBear.png" alt="Pull & Bear" class="brandLogos">
+                    </a>
+                    <a href="#">
+                        <img src="../images/MichaelKors.png" alt="Michael Kors" class="brandLogos">
+                    </a>
+                    <a href="#">
+                        <img src="../images/mango.png" alt="Mango" class="brandLogos">
+                    </a>
+                    <a href="#">
+                        <img src="../images/MissGuided.png" alt="Missguided" class="brandLogos">
+                    </a>
+                    <a href="#">
+                        <img src="../images/Monki.png" alt="Monki" class="brandLogos">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <section class="section_3">
-            <span class="section_3_mobile_wrapper">
-                <div class="section_3_images">
-                    <a href="#">
-                        <div class="section_3_sale_box">SALE</div>
-                        <img src="../images/pullandbear1.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag
-                            </button>
-                        </span>
-                    </a>
+        <a href="#">
+            <div class="section_2_poster_wrapper">
+                <div class="section_2_left"></div>
+                <div class="section_2_right">
+                    <div class="section_2_images"></div>
+                    <div class="section_2_images1"></div>
                 </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear2.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-            <span class="section_3_mobile_wrapper">
-                <div class="section_3_images">
-                    <a href="#">
-                        <img src="../images/pullandbear3.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-                <div class="section_3_images">
-                    <a href="#">
-                        <div class="section_3_sale_box">SALE</div>
-                        <img src="../images/pullandbear4.png">
-                        <p> Pull&Bear Croched Back Playsuit</p>
-                        <span>
-                            <p> $47.10</p>
-                            <button>
-                                <i class="fas fa-shopping-bag"></i> Add to bag</button>
-                        </span>
-                    </a>
-                </div>
-            </span>
-        </section>
 
-        <!-- SECTION 3 DESKTOP STARTS HERE  -->
-        <section class="landing">
+            </div>
+        </a>
+    </section>
+
+    <!-- SECTION 3 MOBILE STARTS HERE  -->
+    <div class="section_3_filterables_wrapper">
+        <div class="section_3_desktop_filterable">
+            <p class="desktop_filterable_elements">NEW ARRIVALS</p>
+            <p class="desktop_filterable_elements">TOP SELLERS</p>
+            <p class="desktop_filterable_elements">FEATURED</p>
+            <div class="underline"></div>
+        </div>
+    </div>
+
+    <section class="section_3">
+        <span class="section_3_mobile_wrapper">
             <div class="section_3_images">
                 <a href="#">
                     <div class="section_3_sale_box">SALE</div>
@@ -247,6 +191,8 @@
                     </span>
                 </a>
             </div>
+        </span>
+        <span class="section_3_mobile_wrapper">
             <div class="section_3_images">
                 <a href="#">
                     <img src="../images/pullandbear3.png">
@@ -270,204 +216,236 @@
                     </span>
                 </a>
             </div>
-        </section>
+        </span>
+    </section>
 
-        <!-- SECTION 4 STARTS HERE -->
-        <section class="section_4">
+    <!-- SECTION 3 DESKTOP STARTS HERE  -->
+    <section class="landing" id="product-loop">
+        <div v-for="product in products" class="section_3_images">
             <a href="#">
-                <div class="section_4_fullwidth_image"></div>
+                <div class="section_3_sale_box">SALE</div>
+                <img :src="'../images/' + product.image_url" :alt="product.title" />
+                <p> {{ product.title }} </p>
+                <span>
+                    <p> {{ product.price }}</p>
+                    <button>
+                        <i class="fas fa-shopping-bag"></i> Add to bag
+                    </button>
+                </span>
             </a>
+        </div>
+    </section>
 
-            <div class="section_4_person_section">
-                <div class="section_4_person_wrapper">
-                    <div class="person">
-                    </div>
-                    <h2> JANE SMITH</h2>
-                    <p>
-                        <em> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                            the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-                            large language ocean. </em>
-                    </p>
+    <!-- SECTION 4 STARTS HERE -->
+    <section class="section_4">
+        <a href="#">
+            <div class="section_4_fullwidth_image"></div>
+        </a>
+
+        <div class="section_4_person_section">
+            <div class="section_4_person_wrapper">
+                <div class="person">
                 </div>
+                <h2> JANE SMITH</h2>
+                <p>
+                    <em> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                        blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                        ocean. </em>
+                </p>
             </div>
+        </div>
+        <span>
+            <div class="line"></div>
+            <h1> GET US ON</h1>
+            <div class="line"></div>
+        </span>
+        <div class="section_4_social_media_wrapper">
             <span>
-                <div class="line"></div>
-                <h1> GET US ON</h1>
-                <div class="line"></div>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
             </span>
-            <div class="section_4_social_media_wrapper">
-                <span>
+            <span>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section_4_social_media">
+                        <i class="fab fa-tumblr"></i>
+                    </div>
+                </a>
+            </span>
+        </div>
+    </section>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__items">
+                <a href="#">
+                    <h1> QUESTIONS?</h1>
+                    <h3> Help </h3>
+                    <h3> Track Order </h3>
+                    <h3> Returns </h3>
+                </a>
+            </div>
+            <div class="footer__items">
+                <a href="#">
+                    <h1> WHERE TO BUY</h1>
+                    <h3> Store locator </h3>
+                    <h3> Wishlist </h3>
+                    <h3> Gift Cards </h3>
+                </a>
+            </div>
+            <div class="footer__items">
+                <a href="#">
+                    <h1> ABOUT US</h1>
+                    <h3> Our story </h3>
+                    <h3> Careers </h3>
+                    <h3> Affiliates </h3>
+                </a>
+            </div>
+            <div class="footer__items">
+                <span id="footer__creditcard">
                     <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-twitter"></i>
-                        </div>
+                        <i class="fab fa-cc-visa"></i>
                     </a>
                     <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-pinterest"></i>
-                        </div>
+                        <i class="fab fa-cc-mastercard"></i>
                     </a>
                     <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                    </a>
-                </span>
-                <span>
-                    <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-google-plus-g"></i>
-                        </div>
+                        <i class="fab fa-cc-paypal"></i>
                     </a>
                     <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-youtube"></i>
-                        </div>
+                        <i class="fab fa-cc-amex"></i>
                     </a>
                     <a href="#">
-                        <div class="section_4_social_media">
-                            <i class="fab fa-tumblr"></i>
-                        </div>
+                        <i class="fab fa-cc-visa"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-cc-mastercard"></i>
                     </a>
                 </span>
             </div>
-        </section>
-
-        <!-- FOOTER STARTS HERE -->
-        <footer class="footer">
-            <div class="footer__inner">
-                <div class="footer__items">
-                    <a href="#">
-                        <h1> QUESTIONS?</h1>
-                        <h3> Help </h3>
-                        <h3> Track Order </h3>
-                        <h3> Returns </h3>
-                    </a>
-                </div>
-                <div class="footer__items">
-                    <a href="#">
-                        <h1> WHERE TO BUY</h1>
-                        <h3> Store locator </h3>
-                        <h3> Wishlist </h3>
-                        <h3> Gift Cards </h3>
-                    </a>
-                </div>
-                <div class="footer__items">
-                    <a href="#">
-                        <h1> ABOUT US</h1>
-                        <h3> Our story </h3>
-                        <h3> Careers </h3>
-                        <h3> Affiliates </h3>
-                    </a>
-                </div>
-                <div class="footer__items">
-                    <span id="footer__creditcard">
-                        <a href="#">
-                            <i class="fab fa-cc-visa"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-cc-mastercard"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-cc-paypal"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-cc-amex"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-cc-visa"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-cc-mastercard"></i>
-                        </a>
-                    </span>
-                </div>
-                <div class="footer__items">
-                    <span>
-                        <img src="../images/logo.png" alt="logo">
-                        <h3> Ecommerce PSD theme </h3>
-                    </span>
-                </div>
+            <div class="footer__items">
+                <span>
+                    <img src="../images/logo.png" alt="logo">
+                    <h3> Ecommerce PSD theme </h3>
+                </span>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-        <script>
-            Vue.component('carousel-component', {
-                render: function (createElement) {
-                    return createElement('div', { class: 'carousel-component' },
-                        this.items.map((item, index) =>
-                            createElement('div', {
-                                'class': 'carousel-page' + (this.current === index ? ' active' : ''),
-                                style: {
-                                    transform: `translate3d(${this.position(index) * 100}%, 0, 0)`,
-                                }
-                            }, [item])
-                        ).concat([
-                            createElement('button', {
-                                'class': 'carousel-nav-prev',
-                                on: { click: () => { this.decreaseCurrent(); } }
-                            }, 'Prev'),
-                            createElement('button', {
-                                'class': 'carousel-nav-next',
-                                on: { click: () => { this.increaseCurrent(); } }
-                            }, 'Next')
-                        ])
-                    );
-                },
-                data: function () {
-                    return {
-                        current: 0
-                    };
-                },
-                computed: {
-                    items: function () {
-                        return this.$slots.default.filter(function (item) {
-                            return item.componentOptions !== undefined &&
-                                item.componentOptions.tag === 'carousel-item';
-                        });
-                    }
-                },
-                methods: {
-                    decreaseCurrent: function () {
-                        this.current += this.items.length - 1;
-                        this.current %= this.items.length;
-                    },
-                    increaseCurrent: function () {
-                        this.current += 1;
-                        this.current %= this.items.length;
-                    },
-                    position: function (index) {
-                        if (index === this.current) return 0;
-                        if (index === (this.current + 1) % this.items.length) return 1;
-                        return -1;
-                    }
+    <script>
+        Vue.component('carousel-component', {
+            render: function (createElement) {
+                return createElement('div', { class: 'carousel-component' },
+                    this.items.map((item, index) =>
+                        createElement('div', {
+                            'class': 'carousel-page' + (this.current === index ? ' active' : ''),
+                            style: {
+                                transform: `translate3d(${this.position(index) * 100}%, 0, 0)`,
+                            }
+                        }, [item])
+                    ).concat([
+                        createElement('button', {
+                            'class': 'carousel-nav-prev',
+                            on: { click: () => { this.decreaseCurrent(); } }
+                        }, 'Prev'),
+                        createElement('button', {
+                            'class': 'carousel-nav-next',
+                            on: { click: () => { this.increaseCurrent(); } }
+                        }, 'Next')
+                    ])
+                );
+            },
+            data: function () {
+                return {
+                    current: 0
+                };
+            },
+            computed: {
+                items: function () {
+                    return this.$slots.default.filter(function (item) {
+                        return item.componentOptions !== undefined &&
+                            item.componentOptions.tag === 'carousel-item';
+                    });
                 }
-            });
-
-            Vue.component('carousel-item', {
-                render: function (createElement) {
-                    return createElement('div', { class: 'carousel-item' }, this.$slots.default);
+            },
+            methods: {
+                decreaseCurrent: function () {
+                    this.current += this.items.length - 1;
+                    this.current %= this.items.length;
+                },
+                increaseCurrent: function () {
+                    this.current += 1;
+                    this.current %= this.items.length;
+                },
+                position: function (index) {
+                    if (index === this.current) return 0;
+                    if (index === (this.current + 1) % this.items.length) return 1;
+                    return -1;
                 }
-            });
+            }
+        });
 
-            new Vue({
-                el: '#vue-routing',
-                data: {
-                    homeLink: 'index.html',
-                    productLink: 'product.html',
-                    collectionLink: 'collection.html',
-                    contactLink: 'contact.html'
-                }
-            });
-        </script>
+        Vue.component('carousel-item', {
+            render: function (createElement) {
+                return createElement('div', { class: 'carousel-item' }, this.$slots.default);
+            }
+        });
 
+        new Vue({
+            el: '#app'
+        });
+    </script>
+
+    <script>
+        new Vue({
+            el: '#vue-instance-nav',
+            data: {
+                homeLink: 'index.html',
+                productLink: 'product.html',
+                collectionLink: 'collection.html',
+                contactLink: 'contact.html'
+            }
+        });
+    </script>
+
+    <script>
+        const app = new Vue({
+            el: '#product-loop',
+            data: {
+                products: []
+            },
+            created() {
+                fetch('https://api.myjson.com/bins/h62ix')
+                    .then(response => response.json())
+                    .then(json => {
+                        this.products = json.products
+                    })
+            }
+        })
+    </script>
 </body>
 
 </html>

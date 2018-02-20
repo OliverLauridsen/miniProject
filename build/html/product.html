@@ -17,7 +17,7 @@
 <body>
     <div id="vue-routing">
 
-    <!-- HEADER SECTION STARTS HERE -->
+        <!-- HEADER SECTION STARTS HERE -->
         <header class="product_header">
             <nav class="product_nav">
                 <a :href="homeLink">
@@ -35,25 +35,25 @@
                         <i class="fas fa-search"></i>
                     </a>
                     <span class="burgerContainer">
-                            <input class="burger-check" id="burger-check" type="checkbox">
-                            <label for="burger-check" class="burger"></label>
-                            <nav id="navigation1" class="navigation">
-                                <ul>
-                                        <li>
-                                                <a :href="homeLink">Home</a>
-                                            </li>
-                                            <li>
-                                                <a :href="productLink">Product</a>
-                                            </li>
-                                            <li>
-                                                <a :href="collectionLink">Collection</a>
-                                            </li>
-                                            <li>
-                                                <a :href="contactLink">Contact</a>
-                                            </li>
-                                            </ul>
-                            </nav>
-                        </span>
+                        <input class="burger-check" id="burger-check" type="checkbox">
+                        <label for="burger-check" class="burger"></label>
+                        <nav id="navigation1" class="navigation">
+                            <ul>
+                                <li>
+                                    <a :href="homeLink">Home</a>
+                                </li>
+                                <li>
+                                    <a :href="productLink">Product</a>
+                                </li>
+                                <li>
+                                    <a :href="collectionLink">Collection</a>
+                                </li>
+                                <li>
+                                    <a :href="contactLink">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </span>
                 </div>
             </nav>
         </header>
@@ -64,68 +64,72 @@
             <div class="psection_1_wrapper">
                 <div class="contentWrapper">
                     <a href="#">
-                    <div class="psection_1_previews_wrapper">
-                        <div class="psection_1_previews"></div>
-                        <div class="psection_1_previews"></div>
-                        <div class="psection_1_previews"></div>
-                        <div class="psection_1_previews"></div>
-                        <div class="psection_1_previews"></div>
-                    </div>
-                    </a>    
-                        <div class="psection_1_full_image">
-                            <div class="psection_heart">
-                                <i class="fas fa-heart"></i>
-                            </div>
+                        <div class="psection_1_previews_wrapper">
+                            <div class="psection_1_previews"></div>
+                            <div class="psection_1_previews"></div>
+                            <div class="psection_1_previews"></div>
+                            <div class="psection_1_previews"></div>
+                            <div class="psection_1_previews"></div>
                         </div>
-                
-                <div class="psection_1_mainContent">
-                    <h1>Adelia Dress</h1>
-                    <span>
-                        <p id="price">$79.85</p>
-                        <span> <i class="fas fa-globe"></i> <p>Free Shipping Worldwide</p></span>
-                    </span>
-                    <select>
-                        <option value="volvo">Black</option>
-                        <option value="saab">White</option>
-                        <option value="opel">Red</option>
-                    </select>
-                    <span class="psection_mobile_column">
+                    </a>
+                    <div class="psection_1_full_image">
+                        <div class="psection_heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="psection_1_mainContent">
+                        <h1>Adelia Dress</h1>
+                        <span>
+                            <p id="price">$79.85</p>
+                            <span>
+                                <i class="fas fa-globe"></i>
+                                <p>Free Shipping Worldwide</p>
+                            </span>
+                        </span>
                         <select>
-                            <option value="volvo">Select size</option>
-                            <option value="saab">36</option>
-                            <option value="opel">37</option>
-                            <option value="opel">38</option>
+                            <option value="volvo">Black</option>
+                            <option value="saab">White</option>
+                            <option value="opel">Red</option>
                         </select>
-                        <div class="psection_1_sizeGuide">
-                            <button> Size Guide </button>
-                        </div>
-                    </span>
-                    <button class="psection_1_addToBag">
-                        <span><i class="fas fa-shopping-bag"></i> ADD TO BAG</span>
-                    </button>
-                    <span class="psection_mobile_column">
-                        <button class="psection_1_save">
-                            SAVE FOR LATER
+                        <span class="psection_mobile_column">
+                            <select>
+                                <option value="volvo">Select size</option>
+                                <option value="saab">36</option>
+                                <option value="opel">37</option>
+                                <option value="opel">38</option>
+                            </select>
+                            <div class="psection_1_sizeGuide">
+                                <button> Size Guide </button>
+                            </div>
+                        </span>
+                        <button class="psection_1_addToBag">
+                            <span>
+                                <i class="fas fa-shopping-bag"></i> ADD TO BAG</span>
                         </button>
-                            <button class="psection_1_share">
-                                <i class="fas fa-share-alt"></i> Share this product 
+                        <span class="psection_mobile_column">
+                            <button class="psection_1_save">
+                                SAVE FOR LATER
                             </button>
-                    </span>
-                    <div class="psection_1_descriptionWrapper">
-                        <div class="psection_1_descriptionWrapperElements">Description</div>
-                        <div class="psection_1_descriptionWrapperElements">Brand</div>
-                        <div class="psection_1_descriptionWrapperElements">Info</div>
-                    </div>
-                    <div class="psection_1_descriptionTextWrapper">
+                            <button class="psection_1_share">
+                                <i class="fas fa-share-alt"></i> Share this product
+                            </button>
+                        </span>
+                        <div class="psection_1_descriptionWrapper">
+                            <div class="psection_1_descriptionWrapperElements">Description</div>
+                            <div class="psection_1_descriptionWrapperElements">Brand</div>
+                            <div class="psection_1_descriptionWrapperElements">Info</div>
+                        </div>
+                        <div class="psection_1_descriptionTextWrapper">
                             <p class="psection_1_descriptionText">
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             </p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -135,12 +139,12 @@
             <div class="product_section_2_wrapper">
                 <h1>Sharpen Your Look</h1>
                 <div class="blueUnderline"></div>
-                <p>     
-                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                <p>
+                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud
                 </p>
             </div>
         </section>
@@ -153,11 +157,11 @@
                     <div class="psection_extraordinary_wrapper">
                         <div class="psection_extraordinary">
                             <h1> Extraordinary Design</h1>
-                            <p>     
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            <p>
+                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             </p>
                             <span class="psection_circle_wrapper">
                                 <span class="individual_circle">
@@ -173,10 +177,10 @@
                                     Elegant Style
                                 </span>
                                 <span class="individual_circle">
-                                        <div class="psection_circle">
-                                            <img src="../images/bowtieIcon.png" alt="icon" />
-                                        </div>
-                                        Elegant Style
+                                    <div class="psection_circle">
+                                        <img src="../images/bowtieIcon.png" alt="icon" />
+                                    </div>
+                                    Elegant Style
                                 </span>
                             </span>
                             <button> READ MORE </button>
@@ -187,46 +191,48 @@
         </section>
 
         <section class="product_section_31">
-                <div class="psection_3_wrapper">
-                    <div class="psection_3_row">
-                        <div class="psection_3_columns"></div>
-                        <div class="psection_extraordinary_wrapper">
-                            <div class="psection_extraordinary">
-                                <h1> Extraordinary Design</h1>
-                                <p>     
-                                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                </p>
-                                <span class="psection_circle_wrapper">
-                                    <span class="individual_circle">
-                                        <div class="psection_circle">
-                                            <img src="../images/glassIcon.png" alt="icon" />
-                                        </div>
-                                        Elegant Style
-                                    </span>
-                                    <span class="individual_circle">
-                                        <div class="psection_circle">
-                                            <img src="../images/clothIcon.png" alt="icon" />
-                                        </div>
-                                        Elegant Style
-                                    </span>
-                                    <span class="individual_circle">
-                                            <div class="psection_circle">
-                                                <img src="../images/bowtieIcon.png" alt="icon" />
-                                            </div>
-                                            Elegant Style
-                                    </span>
+            <div class="psection_3_wrapper">
+                <div class="psection_3_row">
+                    <div class="psection_3_columns"></div>
+                    <div class="psection_extraordinary_wrapper">
+                        <div class="psection_extraordinary">
+                            <h1> Extraordinary Design</h1>
+                            <p>
+                                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </p>
+                            <span class="psection_circle_wrapper">
+                                <span class="individual_circle">
+                                    <div class="psection_circle">
+                                        <img src="../images/glassIcon.png" alt="icon" />
+                                    </div>
+                                    Elegant Style
                                 </span>
-                                <button> READ MORE </button>
-                            </div>
+                                <span class="individual_circle">
+                                    <div class="psection_circle">
+                                        <img src="../images/clothIcon.png" alt="icon" />
+                                    </div>
+                                    Elegant Style
+                                </span>
+                                <span class="individual_circle">
+                                    <div class="psection_circle">
+                                        <img src="../images/bowtieIcon.png" alt="icon" />
+                                    </div>
+                                    Elegant Style
+                                </span>
+                            </span>
+                            <button> READ MORE </button>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        <a href="#"><img class="discountImage" src="../images/bigDiscounts.png" alt="Discount image" /></a>
+        <a href="#">
+            <img class="discountImage" src="../images/bigDiscounts.png" alt="Discount image" />
+        </a>
 
         <section class="section_4">
             <span>
@@ -274,130 +280,130 @@
 
         <!-- FOOTER STARTS HERE -->
         <footer class="footer">
-                <div class="footer__inner">
-                    <div class="footer__items">
-                        <a href="#">
-                            <h1> QUESTIONS?</h1>
-                            <h3> Help </h3>
-                            <h3> Track Order </h3>
-                            <h3> Returns </h3>
-                        </a>
-                    </div>
-                    <div class="footer__items">
-                        <a href="#">
-                            <h1> WHERE TO BUY</h1>
-                            <h3> Store locator </h3>
-                            <h3> Wishlist </h3>
-                            <h3> Gift Cards </h3>
-                        </a>
-                    </div>
-                    <div class="footer__items">
-                        <a href="#">
-                            <h1> ABOUT US</h1>
-                            <h3> Our story </h3>
-                            <h3> Careers </h3>
-                            <h3> Affiliates </h3>
-                        </a>
-                    </div>
-                    <div class="footer__items">
-                        <span id="footer__creditcard">
-                            <a href="#">
-                                <i class="fab fa-cc-visa"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-cc-mastercard"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-cc-paypal"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-cc-amex"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-cc-visa"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-cc-mastercard"></i>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="footer__items">
-                        <span>
-                            <img src="../images/logo.png" alt="logo">
-                            <h3> Ecommerce PSD theme </h3>
-                        </span>
-                    </div>
+            <div class="footer__inner">
+                <div class="footer__items">
+                    <a href="#">
+                        <h1> QUESTIONS?</h1>
+                        <h3> Help </h3>
+                        <h3> Track Order </h3>
+                        <h3> Returns </h3>
+                    </a>
                 </div>
-            </footer>
+                <div class="footer__items">
+                    <a href="#">
+                        <h1> WHERE TO BUY</h1>
+                        <h3> Store locator </h3>
+                        <h3> Wishlist </h3>
+                        <h3> Gift Cards </h3>
+                    </a>
+                </div>
+                <div class="footer__items">
+                    <a href="#">
+                        <h1> ABOUT US</h1>
+                        <h3> Our story </h3>
+                        <h3> Careers </h3>
+                        <h3> Affiliates </h3>
+                    </a>
+                </div>
+                <div class="footer__items">
+                    <span id="footer__creditcard">
+                        <a href="#">
+                            <i class="fab fa-cc-visa"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-paypal"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-amex"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-visa"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="footer__items">
+                    <span>
+                        <img src="../images/logo.png" alt="logo">
+                        <h3> Ecommerce PSD theme </h3>
+                    </span>
+                </div>
+            </div>
+        </footer>
         <script>
-                Vue.component('carousel-component', {
-                    render: function (createElement) {
-                        return createElement('div', { class: 'carousel-component' },
-                            this.items.map((item, index) =>
-                                createElement('div', {
-                                    'class': 'carousel-page' + (this.current === index ? ' active' : ''),
-                                    style: {
-                                        transform: `translate3d(${this.position(index) * 100}%, 0, 0)`,
-                                    }
-                                }, [item])
-                            ).concat([
-                                createElement('button', {
-                                    'class': 'carousel-nav-prev',
-                                    on: { click: () => { this.decreaseCurrent(); } }
-                                }, 'Prev'),
-                                createElement('button', {
-                                    'class': 'carousel-nav-next',
-                                    on: { click: () => { this.increaseCurrent(); } }
-                                }, 'Next')
-                            ])
-                        );
-                    },
-                    data: function () {
-                        return {
-                            current: 0
-                        };
-                    },
-                    computed: {
-                        items: function () {
-                            return this.$slots.default.filter(function (item) {
-                                return item.componentOptions !== undefined &&
-                                    item.componentOptions.tag === 'carousel-item';
-                            });
-                        }
-                    },
-                    methods: {
-                        decreaseCurrent: function () {
-                            this.current += this.items.length - 1;
-                            this.current %= this.items.length;
-                        },
-                        increaseCurrent: function () {
-                            this.current += 1;
-                            this.current %= this.items.length;
-                        },
-                        position: function (index) {
-                            if (index === this.current) return 0;
-                            if (index === (this.current + 1) % this.items.length) return 1;
-                            return -1;
-                        }
+            Vue.component('carousel-component', {
+                render: function (createElement) {
+                    return createElement('div', { class: 'carousel-component' },
+                        this.items.map((item, index) =>
+                            createElement('div', {
+                                'class': 'carousel-page' + (this.current === index ? ' active' : ''),
+                                style: {
+                                    transform: `translate3d(${this.position(index) * 100}%, 0, 0)`,
+                                }
+                            }, [item])
+                        ).concat([
+                            createElement('button', {
+                                'class': 'carousel-nav-prev',
+                                on: { click: () => { this.decreaseCurrent(); } }
+                            }, 'Prev'),
+                            createElement('button', {
+                                'class': 'carousel-nav-next',
+                                on: { click: () => { this.increaseCurrent(); } }
+                            }, 'Next')
+                        ])
+                    );
+                },
+                data: function () {
+                    return {
+                        current: 0
+                    };
+                },
+                computed: {
+                    items: function () {
+                        return this.$slots.default.filter(function (item) {
+                            return item.componentOptions !== undefined &&
+                                item.componentOptions.tag === 'carousel-item';
+                        });
                     }
-                });
-    
-                Vue.component('carousel-item', {
-                    render: function (createElement) {
-                        return createElement('div', { class: 'carousel-item' }, this.$slots.default);
+                },
+                methods: {
+                    decreaseCurrent: function () {
+                        this.current += this.items.length - 1;
+                        this.current %= this.items.length;
+                    },
+                    increaseCurrent: function () {
+                        this.current += 1;
+                        this.current %= this.items.length;
+                    },
+                    position: function (index) {
+                        if (index === this.current) return 0;
+                        if (index === (this.current + 1) % this.items.length) return 1;
+                        return -1;
                     }
-                });
-    
-                new Vue({
-                    el: '#vue-routing',
-                    data: {
-                        homeLink: 'index.html',
-                        productLink: 'product.html',
-                        collectionLink: 'collection.html',
-                        contactLink: 'contact.html'
-                    }
-                });
-            </script>
+                }
+            });
+
+            Vue.component('carousel-item', {
+                render: function (createElement) {
+                    return createElement('div', { class: 'carousel-item' }, this.$slots.default);
+                }
+            });
+
+            new Vue({
+                el: '#vue-routing',
+                data: {
+                    homeLink: 'index.html',
+                    productLink: 'product.html',
+                    collectionLink: 'collection.html',
+                    contactLink: 'contact.html'
+                }
+            });
+        </script>
     </div>
 </body>
 
